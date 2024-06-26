@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/serial.dir/main.cpp.o CMakeFiles/serial.dir/serial.cpp.o -o serial 

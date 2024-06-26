@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/mashalimay/HPPC/hw5/hw5/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -arch=sm_70 --generate-code=arch=compute_70,code=[compute_70,sm_70] -std=c++14 -x cu -c /home/mashalimay/HPPC/hw5/hw5/main.cu -o CMakeFiles/gpu.dir/main.cu.o",
+  "file": "/home/mashalimay/HPPC/hw5/hw5/main.cu"
+},
+{
+  "directory": "/home/mashalimay/HPPC/hw5/hw5/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler    -arch=sm_70 --generate-code=arch=compute_70,code=[compute_70,sm_70] -std=c++14 -x cu -c /home/mashalimay/HPPC/hw5/hw5/gpu.cu -o CMakeFiles/gpu.dir/gpu.cu.o",
+  "file": "/home/mashalimay/HPPC/hw5/hw5/gpu.cu"
+}
+]

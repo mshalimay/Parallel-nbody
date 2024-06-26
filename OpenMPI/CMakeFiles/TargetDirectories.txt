@@ -1,0 +1,3 @@
+/home/mashalimay/HPPC/hw4/CMakeFiles/mpi.dir
+/home/mashalimay/HPPC/hw4/CMakeFiles/edit_cache.dir
+/home/mashalimay/HPPC/hw4/CMakeFiles/rebuild_cache.dir

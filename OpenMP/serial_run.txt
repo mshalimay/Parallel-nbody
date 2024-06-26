@@ -1,0 +1,2230 @@
+--------------------------------------------------------------------------------
+Profile data file 'callgrind.out.520550' (creator: callgrind-3.18.1)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 1931360209
+Trigger: Program termination
+Profiled target:  ./build/serial (PID 520550, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir                      
+--------------------------------------------------------------------------------
+12,383,059,829 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir                      file:function
+--------------------------------------------------------------------------------
+3,180,929,850 (25.69%)  serial.cpp:simulate_one_step(particle_t*, int, double) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+1,495,880,568 (12.08%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::_Node_iterator(std::__detail::_Hash_node<int, false>*) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+1,175,334,732 ( 9.49%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator_base<int, false>::_Node_iterator_base(std::__detail::_Hash_node<int, false>*) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+1,174,326,890 ( 9.48%)  /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::begin() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  960,812,910 ( 7.76%)  /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::end() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  838,912,958 ( 6.77%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::operator!=(std::__detail::_Node_iterator_base<int, false> const&, std::__detail::_Node_iterator_base<int, false> const&) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  802,051,755 ( 6.48%)  /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::operator[](unsigned long) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  533,784,950 ( 4.31%)  /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::begin() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  533,784,950 ( 4.31%)  /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::end() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  427,108,616 ( 3.45%)  /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_begin() const [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  156,145,794 ( 1.26%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator_base<int, false>::_M_incr() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  133,839,252 ( 1.08%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::operator*() const [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  122,685,981 ( 0.99%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::operator++() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  112,458,930 ( 0.91%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_valptr() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  112,458,930 ( 0.91%)  /usr/include/c++/11/ext/aligned_buffer.h:__gnu_cxx::__aligned_buffer<int>::_M_ptr() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+  111,532,710 ( 0.90%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_v() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+   89,979,648 ( 0.73%)  /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+   80,672,112 ( 0.65%)  /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+   78,721,251 ( 0.64%)  /usr/include/c++/11/ext/aligned_buffer.h:__gnu_cxx::__aligned_buffer<int>::_M_addr() [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+   65,020,316 ( 0.53%)  serial.cpp:move(particle_t&, double) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+   45,924,062 ( 0.37%)  common.h:grid::update_blocks(particle_t*, int) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+   43,508,546 ( 0.35%)  serial.cpp:apply_force(particle_t&, particle_t&) [/home/mashalimay/HPPC/hw2/hw2/build/serial]
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/hashtable_policy.h
+--------------------------------------------------------------------------------
+Ir                   
+
+-- line 77 ----------------------------------------
+          .               __distance_fw(_Iterator __first, _Iterator __last)
+          .               { return __distance_fw(__first, __last,
+          .           			   std::__iterator_category(__first)); }
+          .           
+          .             struct _Identity
+          .             {
+          .               template<typename _Tp>
+          .                 _Tp&&
+    566,586 ( 0.00%)        operator()(_Tp&& __x) const noexcept
+    472,155 ( 0.00%)        { return std::forward<_Tp>(__x); }
+    661,017 ( 0.01%)  => /usr/include/c++/11/bits/move.h:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) (94,431x)
+          .             };
+          .           
+          .             struct _Select1st
+          .             {
+          .               template<typename _Tp>
+          .                 auto
+          .                 operator()(_Tp&& __x) const noexcept
+          .                 -> decltype(std::get<0>(std::forward<_Tp>(__x)))
+-- line 94 ----------------------------------------
+-- line 154 ----------------------------------------
+          .             template<typename _NodeAlloc>
+          .               struct _AllocNode
+          .               {
+          .               private:
+          .                 using __hashtable_alloc = _Hashtable_alloc<_NodeAlloc>;
+          .                 using __node_type = typename __hashtable_alloc::__node_type;
+          .           
+          .               public:
+    231,555 ( 0.00%)        _AllocNode(__hashtable_alloc& __h)
+    277,866 ( 0.00%)        : _M_h(__h) { }
+          .           
+          .                 template<typename _Arg>
+          .           	__node_type*
+    324,177 ( 0.00%)  	operator()(_Arg&& __arg) const
+    509,421 ( 0.00%)  	{ return _M_h._M_allocate_node(std::forward<_Arg>(__arg)); }
+ 14,731,965 ( 0.12%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>* std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_allocate_node<int const&>(int const&) (46,311x)
+    324,177 ( 0.00%)  => /usr/include/c++/11/bits/move.h:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) (46,311x)
+          .           
+          .               private:
+          .                 __hashtable_alloc& _M_h;
+          .               };
+          .           
+          .             // Auxiliary types used for all instantiations of _Hashtable nodes
+          .             // and iterators.
+          .           
+-- line 176 ----------------------------------------
+-- line 211 ----------------------------------------
+          .              *  template parameter of class template _Hashtable controls whether
+          .              *  nodes also store a hash code. In some cases (e.g. strings) this
+          .              *  may be a performance win.
+          .              */
+          .             struct _Hash_node_base
+          .             {
+          .               _Hash_node_base* _M_nxt;
+          .           
+    462,168 ( 0.00%)      _Hash_node_base() noexcept : _M_nxt() { }
+          .           
+          .               _Hash_node_base(_Hash_node_base* __next) noexcept : _M_nxt(__next) { }
+          .             };
+          .           
+          .             /**
+          .              *  struct _Hash_node_value_base
+          .              *
+          .              *  Node type with the value to store.
+-- line 227 ----------------------------------------
+-- line 229 ----------------------------------------
+          .             template<typename _Value>
+          .               struct _Hash_node_value_base
+          .               {
+          .                 typedef _Value value_type;
+          .           
+          .                 __gnu_cxx::__aligned_buffer<_Value> _M_storage;
+          .           
+          .                 _Value*
+ 56,229,465 ( 0.45%)        _M_valptr() noexcept
+ 56,229,465 ( 0.45%)        { return _M_storage._M_ptr(); }
+191,180,181 ( 1.54%)  => /usr/include/c++/11/ext/aligned_buffer.h:__gnu_cxx::__aligned_buffer<int>::_M_ptr() (11,245,893x)
+          .           
+          .                 const _Value*
+    240,600 ( 0.00%)        _M_valptr() const noexcept
+    240,600 ( 0.00%)        { return _M_storage._M_ptr(); }
+    818,040 ( 0.01%)  => /usr/include/c++/11/ext/aligned_buffer.h:__gnu_cxx::__aligned_buffer<int>::_M_ptr() const (48,120x)
+          .           
+          .                 _Value&
+ 55,766,355 ( 0.45%)        _M_v() noexcept
+ 55,766,355 ( 0.45%)        { return *_M_valptr(); }
+301,138,317 ( 2.43%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_valptr() (11,153,271x)
+          .           
+          .                 const _Value&
+    240,600 ( 0.00%)        _M_v() const noexcept
+    240,600 ( 0.00%)        { return *_M_valptr(); }
+  1,299,240 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_valptr() const (48,120x)
+          .               };
+          .           
+          .             /**
+          .              *  Primary template struct _Hash_node_code_cache.
+          .              */
+          .             template<bool _Cache_hash_code>
+          .               struct _Hash_node_code_cache
+          .               { };
+-- line 258 ----------------------------------------
+-- line 269 ----------------------------------------
+          .               : _Hash_node_value_base<_Value>
+          .               , _Hash_node_code_cache<_Cache_hash_code>
+          .               { };
+          .           
+          .             /**
+          .              *  Primary template struct _Hash_node.
+          .              */
+          .             template<typename _Value, bool _Cache_hash_code>
+    509,421 ( 0.00%)      struct _Hash_node
+    416,799 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_base::_Hash_node_base() (46,311x)
+          .               : _Hash_node_base
+          .               , _Hash_node_value<_Value, _Cache_hash_code>
+          .               {
+          .                 _Hash_node*
+ 44,989,824 ( 0.36%)        _M_next() const noexcept
+ 44,989,824 ( 0.36%)        { return static_cast<_Hash_node*>(this->_M_nxt); }
+          .               };
+          .           
+          .             /// Base class for node iterators.
+          .             template<typename _Value, bool _Cache_hash_code>
+          .               struct _Node_iterator_base
+          .               {
+          .                 using __node_type = _Hash_node<_Value, _Cache_hash_code>;
+          .           
+          .                 __node_type* _M_cur;
+          .           
+          .                 _Node_iterator_base() : _M_cur(nullptr) { }
+534,243,060 ( 4.31%)        _Node_iterator_base(__node_type* __p) noexcept
+641,091,672 ( 5.18%)        : _M_cur(__p) { }
+          .           
+          .                 void
+ 55,766,355 ( 0.45%)        _M_incr() noexcept
+100,379,439 ( 0.81%)        { _M_cur = _M_cur->_M_next(); }
+ 89,226,168 ( 0.72%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (11,153,271x)
+          .           
+          .                 friend bool
+          .                 operator==(const _Node_iterator_base& __x, const _Node_iterator_base& __y)
+          .                 noexcept
+          .                 { return __x._M_cur == __y._M_cur; }
+          .           
+          .           #if __cpp_impl_three_way_comparison < 201907L
+          .                 friend bool
+322,658,830 ( 2.61%)        operator!=(const _Node_iterator_base& __x, const _Node_iterator_base& __y)
+          .                 noexcept
+516,254,128 ( 4.17%)        { return __x._M_cur != __y._M_cur; }
+          .           #endif
+          .               };
+          .           
+          .             /// Node iterators, used to iterate through all the hashtable.
+          .             template<typename _Value, bool __constant_iterators, bool __cache>
+          .               struct _Node_iterator
+          .               : public _Node_iterator_base<_Value, __cache>
+          .               {
+-- line 319 ----------------------------------------
+-- line 330 ----------------------------------------
+          .           				  const value_type*, value_type*>::type;
+          .           
+          .                 using reference = typename std::conditional<__constant_iterators,
+          .           				  const value_type&, value_type&>::type;
+          .           
+          .                 _Node_iterator() = default;
+          .           
+          .                 explicit
+641,091,672 ( 5.18%)        _Node_iterator(__node_type* __p) noexcept
+854,788,896 ( 6.90%)        : __base_type(__p) { }
+1,175,334,732 ( 9.49%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator_base<int, false>::_Node_iterator_base(std::__detail::_Hash_node<int, false>*) (106,848,612x)
+          .           
+          .                 reference
+ 55,766,355 ( 0.45%)        operator*() const noexcept
+ 78,072,897 ( 0.63%)        { return this->_M_cur->_M_v(); }
+412,671,027 ( 3.33%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_v() (11,153,271x)
+          .           
+          .                 pointer
+          .                 operator->() const noexcept
+          .                 { return this->_M_cur->_M_valptr(); }
+          .           
+          .                 _Node_iterator&
+ 55,766,355 ( 0.45%)        operator++() noexcept
+          .                 {
+ 33,459,813 ( 0.27%)  	this->_M_incr();
+245,371,962 ( 1.98%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator_base<int, false>::_M_incr() (11,153,271x)
+ 11,153,271 ( 0.09%)  	return *this;
+ 22,306,542 ( 0.18%)        }
+          .           
+          .                 _Node_iterator
+          .                 operator++(int) noexcept
+          .                 {
+          .           	_Node_iterator __tmp(*this);
+          .           	this->_M_incr();
+          .           	return __tmp;
+          .                 }
+-- line 362 ----------------------------------------
+-- line 420 ----------------------------------------
+          .             /// into the range [0, N).
+          .             struct _Mod_range_hashing
+          .             {
+          .               typedef std::size_t first_argument_type;
+          .               typedef std::size_t second_argument_type;
+          .               typedef std::size_t result_type;
+          .           
+          .               result_type
+    595,356 ( 0.00%)      operator()(first_argument_type __num,
+          .           	       second_argument_type __den) const noexcept
+    595,356 ( 0.00%)      { return __num % __den; }
+          .             };
+          .           
+          .             /// Default ranged hash function H.  In principle it should be a
+          .             /// function object composed from objects of type H1 and H2 such that
+          .             /// h(k, N) = h2(h1(k), N), but that would mean making extra copies of
+          .             /// h1 and h2.  So instead we'll just use a tag to tell class template
+          .             /// hashtable to do that composition.
+          .             struct _Default_ranged_hash { };
+          .           
+          .             /// Default value for rehash policy.  Bucket size is (usually) the
+          .             /// smallest prime that keeps the load factor small enough.
+          .             struct _Prime_rehash_policy
+          .             {
+          .               using __has_load_factor = true_type;
+          .           
+     25,205 ( 0.00%)      _Prime_rehash_policy(float __z = 1.0) noexcept
+     40,328 ( 0.00%)      : _M_max_load_factor(__z), _M_next_resize(0) { }
+          .           
+          .               float
+          .               max_load_factor() const noexcept
+          .               { return _M_max_load_factor; }
+          .           
+          .               // Return a bucket size no smaller than n.
+          .               std::size_t
+          .               _M_next_bkt(std::size_t __n) const;
+-- line 455 ----------------------------------------
+-- line 465 ----------------------------------------
+          .               // is the new bucket count.  If not, return make_pair(false, 0).
+          .               std::pair<bool, std::size_t>
+          .               _M_need_rehash(std::size_t __n_bkt, std::size_t __n_elt,
+          .           		   std::size_t __n_ins) const;
+          .           
+          .               typedef std::size_t _State;
+          .           
+          .               _State
+    185,244 ( 0.00%)      _M_state() const
+    185,244 ( 0.00%)      { return _M_next_resize; }
+          .           
+          .               void
+          .               _M_reset() noexcept
+          .               { _M_next_resize = 0; }
+          .           
+          .               void
+          .               _M_reset(_State __state)
+          .               { _M_next_resize = __state; }
+-- line 482 ----------------------------------------
+-- line 807 ----------------------------------------
+          .                 using value_type = typename __hashtable_base::value_type;
+          .                 using size_type = typename __hashtable_base::size_type;
+          .           
+          .                 using __unique_keys = typename _Traits::__unique_keys;
+          .                 using __node_alloc_type = typename __hashtable_alloc::__node_alloc_type;
+          .                 using __node_gen_type = _AllocNode<__node_alloc_type>;
+          .           
+          .                 __hashtable&
+    185,244 ( 0.00%)        _M_conjure_hashtable()
+    138,933 ( 0.00%)        { return *(static_cast<__hashtable*>(this)); }
+          .           
+          .                 template<typename _InputIterator, typename _NodeGetter>
+          .           	void
+          .           	_M_insert_range(_InputIterator __first, _InputIterator __last,
+          .           			const _NodeGetter&, true_type __uks);
+          .           
+          .                 template<typename _InputIterator, typename _NodeGetter>
+          .           	void
+-- line 824 ----------------------------------------
+-- line 832 ----------------------------------------
+          .                 using const_iterator = _Node_const_iterator<_Value, __constant_iterators::value,
+          .           						  __hash_cached::value>;
+          .           
+          .                 using __ireturn_type = typename std::conditional<__unique_keys::value,
+          .           						     std::pair<iterator, bool>,
+          .           						     iterator>::type;
+          .           
+          .                 __ireturn_type
+    416,799 ( 0.00%)        insert(const value_type& __v)
+          .                 {
+    185,244 ( 0.00%)  	__hashtable& __h = _M_conjure_hashtable();
+    324,177 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Insert_base<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_conjure_hashtable() (46,311x)
+    231,555 ( 0.00%)  	__node_gen_type __node_gen(__h);
+    509,421 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<int, false> > >::_AllocNode(std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >&) (46,311x)
+    277,866 ( 0.00%)  	return __h._M_insert(__v, __node_gen, __unique_keys{});
+ 40,869,515 ( 0.33%)  => /usr/include/c++/11/bits/hashtable.h:std::pair<std::__detail::_Node_iterator<int, true, false>, bool> std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert<int const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<int, false> > > >(int const&, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<int, false> > > const&, std::integral_constant<bool, true>) (46,311x)
+    231,555 ( 0.00%)        }
+          .           
+          .                 iterator
+          .                 insert(const_iterator __hint, const value_type& __v)
+          .                 {
+          .           	__hashtable& __h = _M_conjure_hashtable();
+          .           	__node_gen_type __node_gen(__h);	
+          .           	return __h._M_insert(__hint, __v, __node_gen, __unique_keys{});
+          .                 }
+-- line 853 ----------------------------------------
+-- line 1116 ----------------------------------------
+          .              *  final) and when it is worth it (the type is empty.)
+          .              */
+          .             template<int _Nm, typename _Tp,
+          .           	   bool __use_ebo = !__is_final(_Tp) && __is_empty(_Tp)>
+          .               struct _Hashtable_ebo_helper;
+          .           
+          .             /// Specialization using EBO.
+          .             template<int _Nm, typename _Tp>
+     55,451 ( 0.00%)      struct _Hashtable_ebo_helper<_Nm, _Tp, true>
+     90,738 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::__detail::_Hash_node<int, false> >::~allocator() (5,041x)
+          .               : private _Tp
+          .               {
+    126,025 ( 0.00%)        _Hashtable_ebo_helper() noexcept(noexcept(_Tp())) : _Tp() { }
+     90,738 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::__detail::_Hash_node<int, false> >::allocator() (5,041x)
+          .           
+          .                 template<typename _OtherTp>
+          .           	_Hashtable_ebo_helper(_OtherTp&& __tp)
+          .           	: _Tp(std::forward<_OtherTp>(__tp))
+          .           	{ }
+          .           
+    978,194 ( 0.01%)        const _Tp& _M_cget() const { return static_cast<const _Tp&>(*this); }
+  1,367,282 ( 0.01%)        _Tp& _M_get() { return static_cast<_Tp&>(*this); }
+          .               };
+          .           
+          .             /// Specialization not using EBO.
+          .             template<int _Nm, typename _Tp>
+          .               struct _Hashtable_ebo_helper<_Nm, _Tp, false>
+          .               {
+          .                 _Hashtable_ebo_helper() = default;
+          .           
+-- line 1143 ----------------------------------------
+-- line 1202 ----------------------------------------
+          .                 hash_function() const
+          .                 { return _M_hash(); }
+          .           
+          .               protected:
+          .                 typedef std::size_t 				__hash_code;
+          .           
+          .                 // We need the default constructor for the local iterators and _Hashtable
+          .                 // default constructor.
+     55,451 ( 0.00%)        _Hash_code_base() = default;
+     35,287 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true>::_Hashtable_ebo_helper() (5,041x)
+          .           
+          .                 _Hash_code_base(const _Hash& __hash) : __ebo_hash(__hash) { }
+          .           
+          .                 __hash_code
+    565,110 ( 0.00%)        _M_hash_code(const _Key& __k) const
+          .                 {
+          .           	static_assert(__is_invocable<const _Hash&, const _Key&>{},
+          .           	    "hash function must be invocable with an argument of key type");
+    847,665 ( 0.01%)  	return _M_hash()(__k);
+  1,601,145 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash() const (94,185x)
+    847,665 ( 0.01%)  => /usr/include/c++/11/bits/functional_hash.h:std::hash<int>::operator()(int) const (94,185x)
+    188,370 ( 0.00%)        }
+          .           
+          .                 template<typename _Kt>
+          .           	__hash_code
+          .           	_M_hash_code_tr(const _Kt& __k) const
+          .           	{
+          .           	  static_assert(__is_invocable<const _Hash&, const _Kt&>{},
+          .           	    "hash function must be invocable with an argument of key type");
+          .           	  return _M_hash()(__k);
+          .           	}
+          .           
+          .                 std::size_t
+    966,630 ( 0.01%)        _M_bucket_index(__hash_code __c, std::size_t __bkt_count) const
+  1,063,293 ( 0.01%)        { return _RangeHash{}(__c, __bkt_count); }
+  1,159,956 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const (96,663x)
+          .           
+          .                 std::size_t
+     25,630 ( 0.00%)        _M_bucket_index(const _Hash_node_value<_Value, false>& __n,
+          .           		      std::size_t __bkt_count) const
+          .           	noexcept( noexcept(declval<const _Hash&>()(declval<const _Key&>()))
+          .           		  && noexcept(declval<const _RangeHash&>()((__hash_code)0,
+          .           							   (std::size_t)0)) )
+          .                 {
+     48,697 ( 0.00%)  	return _RangeHash{}(_M_hash_code(_ExtractKey{}(__n._M_v())),
+    110,209 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const (2,563x)
+     94,831 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_v() const (2,563x)
+     46,134 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:int const& std::__detail::_Identity::operator()<int const&>(int const&) const (2,563x)
+     30,756 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Mod_range_hashing::operator()(unsigned long, unsigned long) const (2,563x)
+          .           			    __bkt_count);
+     12,815 ( 0.00%)        }
+          .           
+          .                 std::size_t
+          .                 _M_bucket_index(const _Hash_node_value<_Value, true>& __n,
+          .           		      std::size_t __bkt_count) const
+          .           	noexcept( noexcept(declval<const _RangeHash&>()((__hash_code)0,
+          .           							(std::size_t)0)) )
+          .                 { return _RangeHash{}(__n._M_hash_code, __bkt_count); }
+          .           
+          .                 void
+    277,866 ( 0.00%)        _M_store_code(_Hash_node_code_cache<false>&, __hash_code) const
+    138,933 ( 0.00%)        { }
+          .           
+          .                 void
+          .                 _M_copy_code(_Hash_node_code_cache<false>&,
+          .           		   const _Hash_node_code_cache<false>&) const
+          .                 { }
+          .           
+          .                 void
+          .                 _M_store_code(_Hash_node_code_cache<true>& __n, __hash_code __c) const
+-- line 1263 ----------------------------------------
+-- line 1268 ----------------------------------------
+          .           		   const _Hash_node_code_cache<true>& __from) const
+          .                 { __to._M_hash_code = __from._M_hash_code; }
+          .           
+          .                 void
+          .                 _M_swap(_Hash_code_base& __x)
+          .                 { std::swap(__ebo_hash::_M_get(), __x.__ebo_hash::_M_get()); }
+          .           
+          .                 const _Hash&
+    941,850 ( 0.01%)        _M_hash() const { return __ebo_hash::_M_cget(); }
+    659,295 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<1, std::hash<int>, true>::_M_cget() const (94,185x)
+          .               };
+          .           
+          .             /// Partial specialization used when nodes contain a cached hash code.
+          .             template<typename _Key, typename _Value, typename _ExtractKey,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused>
+          .               struct _Local_iterator_base<_Key, _Value, _ExtractKey,
+          .           				_Hash, _RangeHash, _Unused, true>
+          .               : public _Node_iterator_base<_Value, true>
+-- line 1284 ----------------------------------------
+-- line 1578 ----------------------------------------
+          .           					       __hash_cached::value>;
+          .           
+          .                 using __hash_code = typename __hash_code_base::__hash_code;
+          .           
+          .               private:
+          .                 using _EqualEBO = _Hashtable_ebo_helper<0, _Equal>;
+          .           
+          .                 static bool
+    227,785 ( 0.00%)        _S_equals(__hash_code, const _Hash_node_code_cache<false>&)
+    136,671 ( 0.00%)        { return true; }
+          .           
+          .                 static bool
+          .                 _S_node_equals(const _Hash_node_code_cache<false>&,
+          .           		     const _Hash_node_code_cache<false>&)
+          .                 { return true; }
+          .           
+          .                 static bool
+          .                 _S_equals(__hash_code __c, const _Hash_node_code_cache<true>& __n)
+-- line 1595 ----------------------------------------
+-- line 1596 ----------------------------------------
+          .                 { return __c == __n._M_hash_code; }
+          .           
+          .                 static bool
+          .                 _S_node_equals(const _Hash_node_code_cache<true>& __lhn,
+          .           		     const _Hash_node_code_cache<true>& __rhn)
+          .                 { return __lhn._M_hash_code == __rhn._M_hash_code; }
+          .           
+          .               protected:
+     70,574 ( 0.00%)        _Hashtable_base() = default;
+     90,738 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_Hash_code_base() (5,041x)
+     35,287 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true>::_Hashtable_ebo_helper() (5,041x)
+          .           
+          .                 _Hashtable_base(const _Hash& __hash, const _Equal& __eq)
+          .                 : __hash_code_base(__hash), _EqualEBO(__eq)
+          .                 { }
+          .           
+          .                 bool
+    546,684 ( 0.00%)        _M_equals(const _Key& __k, __hash_code __c,
+          .           		const _Hash_node_value<_Value, __hash_cached::value>& __n) const
+          .                 {
+          .           	static_assert(__is_invocable<const _Equal&, const _Key&, const _Key&>{},
+          .           	  "key equality predicate must be invocable with two arguments of "
+          .           	  "key type");
+  1,275,350 ( 0.01%)  	return _S_equals(__c, __n) && _M_eq()(__k, _ExtractKey{}(__n._M_v()));
+  1,685,609 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_v() const (45,557x)
+    820,026 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:int const& std::__detail::_Identity::operator()<int const&>(int const&) const (45,557x)
+    774,469 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_base<int, int, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, true, true> >::_M_eq() const (45,557x)
+    637,798 ( 0.01%)  => /usr/include/c++/11/bits/stl_function.h:std::equal_to<int>::operator()(int const&, int const&) const (45,557x)
+    364,456 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_base<int, int, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, true, true> >::_S_equals(unsigned long, std::__detail::_Hash_node_code_cache<false> const&) (45,557x)
+    273,342 ( 0.00%)        }
+          .           
+          .                 template<typename _Kt>
+          .           	bool
+          .           	_M_equals_tr(const _Kt& __k, __hash_code __c,
+          .           		     const _Hash_node_value<_Value,
+          .           					    __hash_cached::value>& __n) const
+          .           	{
+          .           	  static_assert(
+-- line 1626 ----------------------------------------
+-- line 1642 ----------------------------------------
+          .                 void
+          .                 _M_swap(_Hashtable_base& __x)
+          .                 {
+          .           	__hash_code_base::_M_swap(__x);
+          .           	std::swap(_EqualEBO::_M_get(), __x._EqualEBO::_M_get());
+          .                 }
+          .           
+          .                 const _Equal&
+    455,570 ( 0.00%)        _M_eq() const { return _EqualEBO::_M_cget(); }
+    318,899 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<0, std::equal_to<int>, true>::_M_cget() const (45,557x)
+          .               };
+          .           
+          .             /**
+          .              *  Primary class template  _Equality.
+          .              *
+          .              *  This is for implementing equality comparison for unordered
+          .              *  containers, per N3068, by John Lakos and Pablo Halpern.
+          .              *  Algorithmically, we follow closely the reference implementations
+-- line 1658 ----------------------------------------
+-- line 1794 ----------------------------------------
+          .                 return true;
+          .               }
+          .           
+          .             /**
+          .              * This type deals with all allocation and keeps an allocator instance
+          .              * through inheritance to benefit from EBO when possible.
+          .              */
+          .             template<typename _NodeAlloc>
+     55,451 ( 0.00%)      struct _Hashtable_alloc : private _Hashtable_ebo_helper<0, _NodeAlloc>
+    146,189 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<int, false> >, true>::~_Hashtable_ebo_helper() (5,041x)
+          .               {
+          .               private:
+          .                 using __ebo_node_alloc = _Hashtable_ebo_helper<0, _NodeAlloc>;
+          .               public:
+          .                 using __node_type = typename _NodeAlloc::value_type;
+          .                 using __node_alloc_type = _NodeAlloc;
+          .                 // Use __gnu_cxx to benefit from _S_always_equal and al.
+          .                 using __node_alloc_traits = __gnu_cxx::__alloc_traits<__node_alloc_type>;
+-- line 1810 ----------------------------------------
+-- line 1815 ----------------------------------------
+          .                 using __node_ptr = __node_type*;
+          .                 using __node_base = _Hash_node_base;
+          .                 using __node_base_ptr = __node_base*;
+          .                 using __buckets_alloc_type =
+          .           	__alloc_rebind<__node_alloc_type, __node_base_ptr>;
+          .                 using __buckets_alloc_traits = std::allocator_traits<__buckets_alloc_type>;
+          .                 using __buckets_ptr = __node_base_ptr*;
+          .           
+     55,451 ( 0.00%)        _Hashtable_alloc() = default;
+    146,189 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<int, false> >, true>::_Hashtable_ebo_helper() (5,041x)
+          .                 _Hashtable_alloc(const _Hashtable_alloc&) = default;
+          .                 _Hashtable_alloc(_Hashtable_alloc&&) = default;
+          .           
+          .                 template<typename _Alloc>
+          .           	_Hashtable_alloc(_Alloc&& __a)
+          .           	: __ebo_node_alloc(std::forward<_Alloc>(__a))
+          .           	{ }
+          .           
+          .                 __node_alloc_type&
+    976,630 ( 0.01%)        _M_node_allocator()
+    976,630 ( 0.01%)        { return __ebo_node_alloc::_M_get(); }
+  1,367,282 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_ebo_helper<0, std::allocator<std::__detail::_Hash_node<int, false> >, true>::_M_get() (195,326x)
+          .           
+          .                 const __node_alloc_type&
+          .                 _M_node_allocator() const
+          .                 { return __ebo_node_alloc::_M_cget(); }
+          .           
+          .                 // Allocate a node and construct an element within it.
+          .                 template<typename... _Args>
+          .           	__node_ptr
+-- line 1842 ----------------------------------------
+-- line 1862 ----------------------------------------
+          .                 _M_deallocate_buckets(__buckets_ptr, std::size_t __bkt_count);
+          .               };
+          .           
+          .             // Definitions of class template _Hashtable_alloc's out-of-line member
+          .             // functions.
+          .             template<typename _NodeAlloc>
+          .               template<typename... _Args>
+          .                 auto
+    370,488 ( 0.00%)        _Hashtable_alloc<_NodeAlloc>::_M_allocate_node(_Args&&... __args)
+          .                 -> __node_ptr
+          .                 {
+    324,177 ( 0.00%)  	auto __nptr = __node_alloc_traits::allocate(_M_node_allocator(), 1);
+  4,914,033 ( 0.04%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<std::__detail::_Hash_node<int, false> > >::allocate(std::allocator<std::__detail::_Hash_node<int, false> >&, unsigned long) (46,311x)
+    787,287 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_node_allocator() (46,311x)
+    185,244 ( 0.00%)  	__node_ptr __n = std::__to_address(__nptr);
+    324,177 ( 0.00%)  => /usr/include/c++/11/bits/ptr_traits.h:std::__detail::_Hash_node<int, false>* std::__to_address<std::__detail::_Hash_node<int, false> >(std::__detail::_Hash_node<int, false>*) (46,311x)
+          .           	__try
+          .           	  {
+    277,866 ( 0.00%)  	    ::new ((void*)__n) __node_type;
+    926,220 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_Hash_node() (46,311x)
+    370,488 ( 0.00%)  => /usr/include/c++/11/new:operator new(unsigned long, void*) (46,311x)
+    740,976 ( 0.01%)  	    __node_alloc_traits::construct(_M_node_allocator(),
+  2,871,282 ( 0.02%)  => /usr/include/c++/11/bits/alloc_traits.h:void std::allocator_traits<std::allocator<std::__detail::_Hash_node<int, false> > >::construct<int, int const&>(std::allocator<std::__detail::_Hash_node<int, false> >&, int*, int const&) (46,311x)
+    787,287 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_node_allocator() (46,311x)
+  1,250,397 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_valptr() (46,311x)
+    324,177 ( 0.00%)  => /usr/include/c++/11/bits/move.h:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) (46,311x)
+          .           					   __n->_M_valptr(),
+          .           					   std::forward<_Args>(__args)...);
+     46,311 ( 0.00%)  	    return __n;
+          .           	  }
+          .           	__catch(...)
+          .           	  {
+          .           	    __node_alloc_traits::deallocate(_M_node_allocator(), __nptr, 1);
+          .           	    __throw_exception_again;
+          .           	  }
+    231,555 ( 0.00%)        }
+          .           
+          .             template<typename _NodeAlloc>
+          .               void
+    324,177 ( 0.00%)      _Hashtable_alloc<_NodeAlloc>::_M_deallocate_node(__node_ptr __n)
+          .               {
+    509,421 ( 0.00%)        __node_alloc_traits::destroy(_M_node_allocator(), __n->_M_valptr());
+  1,250,397 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_value_base<int>::_M_valptr() (46,311x)
+  1,018,842 ( 0.01%)  => /usr/include/c++/11/bits/alloc_traits.h:void std::allocator_traits<std::allocator<std::__detail::_Hash_node<int, false> > >::destroy<int>(std::allocator<std::__detail::_Hash_node<int, false> >&, int*) (46,311x)
+    787,287 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_node_allocator() (46,311x)
+    231,555 ( 0.00%)        _M_deallocate_node_ptr(__n);
+  8,819,941 ( 0.07%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_deallocate_node_ptr(std::__detail::_Hash_node<int, false>*) (46,311x)
+    185,244 ( 0.00%)      }
+          .           
+          .             template<typename _NodeAlloc>
+          .               void
+    277,866 ( 0.00%)      _Hashtable_alloc<_NodeAlloc>::_M_deallocate_node_ptr(__node_ptr __n)
+          .               {
+          .                 typedef typename __node_alloc_traits::pointer _Ptr;
+    185,244 ( 0.00%)        auto __ptr = std::pointer_traits<_Ptr>::pointer_to(*__n);
+  1,250,397 ( 0.01%)  => /usr/include/c++/11/bits/ptr_traits.h:std::pointer_traits<std::__detail::_Hash_node<int, false>*>::pointer_to(std::__detail::_Hash_node<int, false>&) (46,311x)
+          .                 __n->~__node_type();
+    416,799 ( 0.00%)        __node_alloc_traits::deallocate(_M_node_allocator(), __ptr, 1);
+  5,763,415 ( 0.05%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<std::__detail::_Hash_node<int, false> > >::deallocate(std::allocator<std::__detail::_Hash_node<int, false> >&, std::__detail::_Hash_node<int, false>*, unsigned long) (46,311x)
+    787,287 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_node_allocator() (46,311x)
+    138,933 ( 0.00%)      }
+          .           
+          .             template<typename _NodeAlloc>
+          .               void
+     30,246 ( 0.00%)      _Hashtable_alloc<_NodeAlloc>::_M_deallocate_nodes(__node_ptr __n)
+          .               {
+     17,123 ( 0.00%)        while (__n)
+          .           	{
+      2,000 ( 0.00%)  	  __node_ptr __tmp = __n;
+      4,000 ( 0.00%)  	  __n = __n->_M_next();
+      8,000 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (1,000x)
+      5,000 ( 0.00%)  	  _M_deallocate_node(__tmp);
+    303,851 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_deallocate_node(std::__detail::_Hash_node<int, false>*) (1,000x)
+          .           	}
+     20,164 ( 0.00%)      }
+          .           
+          .             template<typename _NodeAlloc>
+          .               auto
+     50,410 ( 0.00%)      _Hashtable_alloc<_NodeAlloc>::_M_allocate_buckets(std::size_t __bkt_count)
+          .               -> __buckets_ptr
+          .               {
+     40,328 ( 0.00%)        __buckets_alloc_type __alloc(_M_node_allocator());
+     95,779 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<int, false> >(std::allocator<std::__detail::_Hash_node<int, false> > const&) (5,041x)
+     85,697 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_node_allocator() (5,041x)
+          .           
+     30,246 ( 0.00%)        auto __ptr = __buckets_alloc_traits::allocate(__alloc, __bkt_count);
+  1,245,922 ( 0.01%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::allocate(std::allocator<std::__detail::_Hash_node_base*>&, unsigned long) (5,041x)
+     20,164 ( 0.00%)        __buckets_ptr __p = std::__to_address(__ptr);
+     35,287 ( 0.00%)  => /usr/include/c++/11/bits/ptr_traits.h:std::__detail::_Hash_node_base** std::__to_address<std::__detail::_Hash_node_base*>(std::__detail::_Hash_node_base**) (5,041x)
+     30,246 ( 0.00%)        __builtin_memset(__p, 0, __bkt_count * sizeof(__node_base_ptr));
+    105,861 ( 0.00%)  => ???:0x000000000010a350 (5,041x)
+     10,082 ( 0.00%)        return __p;
+     45,369 ( 0.00%)      }
+     90,738 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::__detail::_Hash_node_base*>::~allocator() (5,041x)
+          .           
+          .             template<typename _NodeAlloc>
+          .               void
+     55,451 ( 0.00%)      _Hashtable_alloc<_NodeAlloc>::
+          .               _M_deallocate_buckets(__buckets_ptr __bkts,
+          .           			  std::size_t __bkt_count)
+          .               {
+          .                 typedef typename __buckets_alloc_traits::pointer _Ptr;
+     20,164 ( 0.00%)        auto __ptr = std::pointer_traits<_Ptr>::pointer_to(*__bkts);
+    136,107 ( 0.00%)  => /usr/include/c++/11/bits/ptr_traits.h:std::pointer_traits<std::__detail::_Hash_node_base**>::pointer_to(std::__detail::_Hash_node_base*&) (5,041x)
+     40,328 ( 0.00%)        __buckets_alloc_type __alloc(_M_node_allocator());
+     95,779 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::__detail::_Hash_node_base*>::allocator<std::__detail::_Hash_node<int, false> >(std::allocator<std::__detail::_Hash_node<int, false> > const&) (5,041x)
+     85,697 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_node_allocator() (5,041x)
+     30,246 ( 0.00%)        __buckets_alloc_traits::deallocate(__alloc, __ptr, __bkt_count);
+    730,796 ( 0.01%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<std::__detail::_Hash_node_base*> >::deallocate(std::allocator<std::__detail::_Hash_node_base*>&, std::__detail::_Hash_node_base**, unsigned long) (5,041x)
+     45,369 ( 0.00%)      }
+     90,738 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::__detail::_Hash_node_base*>::~allocator() (5,041x)
+          .           
+          .            ///@} hashtable-detail
+          .           } // namespace __detail
+          .           /// @endcond
+          .           _GLIBCXX_END_NAMESPACE_VERSION
+          .           } // namespace std
+          .           
+          .           #endif // _HASHTABLE_POLICY_H
+-- line 1951 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/stl_vector.h
+--------------------------------------------------------------------------------
+Ir                   
+
+-- line 89 ----------------------------------------
+          .                  	pointer;
+          .           
+          .                 struct _Vector_impl_data
+          .                 {
+          .           	pointer _M_start;
+          .           	pointer _M_finish;
+          .           	pointer _M_end_of_storage;
+          .           
+          8 ( 0.00%)  	_Vector_impl_data() _GLIBCXX_NOEXCEPT
+         12 ( 0.00%)  	: _M_start(), _M_finish(), _M_end_of_storage()
+          6 ( 0.00%)  	{ }
+          .           
+          .           #if __cplusplus >= 201103L
+          .           	_Vector_impl_data(_Vector_impl_data&& __x) noexcept
+          .           	: _M_start(__x._M_start), _M_finish(__x._M_finish),
+          .           	  _M_end_of_storage(__x._M_end_of_storage)
+          .           	{ __x._M_start = __x._M_finish = __x._M_end_of_storage = pointer(); }
+          .           #endif
+          .           
+-- line 107 ----------------------------------------
+-- line 120 ----------------------------------------
+          .           	  // information used by TBAA.
+          .           	  _Vector_impl_data __tmp;
+          .           	  __tmp._M_copy_data(*this);
+          .           	  _M_copy_data(__x);
+          .           	  __x._M_copy_data(__tmp);
+          .           	}
+          .                 };
+          .           
+         22 ( 0.00%)        struct _Vector_impl
+         18 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > >::~allocator() (1x)
+          .           	: public _Tp_alloc_type, public _Vector_impl_data
+          .                 {
+          5 ( 0.00%)  	_Vector_impl() _GLIBCXX_NOEXCEPT_IF(
+          .           	    is_nothrow_default_constructible<_Tp_alloc_type>::value)
+          6 ( 0.00%)  	: _Tp_alloc_type()
+         18 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > >::allocator() (1x)
+         13 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_Vector_impl_data::_Vector_impl_data() (1x)
+          3 ( 0.00%)  	{ }
+          .           
+          6 ( 0.00%)  	_Vector_impl(_Tp_alloc_type const& __a) _GLIBCXX_NOEXCEPT
+          8 ( 0.00%)  	: _Tp_alloc_type(__a)
+         22 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<int>::allocator(std::allocator<int> const&) (1x)
+         13 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_Vector_impl_data::_Vector_impl_data() (1x)
+          3 ( 0.00%)  	{ }
+          .           
+          .           #if __cplusplus >= 201103L
+          .           	// Not defaulted, to enforce noexcept(true) even when
+          .           	// !is_nothrow_move_constructible<_Tp_alloc_type>.
+          .           	_Vector_impl(_Vector_impl&& __x) noexcept
+          .           	: _Tp_alloc_type(std::move(__x)), _Vector_impl_data(std::move(__x))
+          .           	{ }
+          .           
+-- line 146 ----------------------------------------
+-- line 268 ----------------------------------------
+          .           #define _GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC
+          .           #endif // _GLIBCXX_SANITIZE_STD_ALLOCATOR && _GLIBCXX_SANITIZE_VECTOR
+          .                 };
+          .           
+          .               public:
+          .                 typedef _Alloc allocator_type;
+          .           
+          .                 _Tp_alloc_type&
+         20 ( 0.00%)        _M_get_Tp_allocator() _GLIBCXX_NOEXCEPT
+         15 ( 0.00%)        { return this->_M_impl; }
+          .           
+          .                 const _Tp_alloc_type&
+         16 ( 0.00%)        _M_get_Tp_allocator() const _GLIBCXX_NOEXCEPT
+         12 ( 0.00%)        { return this->_M_impl; }
+          .           
+          .                 allocator_type
+          .                 get_allocator() const _GLIBCXX_NOEXCEPT
+          .                 { return allocator_type(_M_get_Tp_allocator()); }
+          .           
+          .           #if __cplusplus >= 201103L
+         11 ( 0.00%)        _Vector_base() = default;
+         45 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_Vector_impl::_Vector_impl() (1x)
+          .           #else
+          .                 _Vector_base() { }
+          .           #endif
+          .           
+          .                 _Vector_base(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+          .                 : _M_impl(__a) { }
+          .           
+          .                 // Kept for ABI compatibility.
+          .           #if !_GLIBCXX_INLINE_VERSION
+          .                 _Vector_base(size_t __n)
+          .                 : _M_impl()
+          .                 { _M_create_storage(__n); }
+          .           #endif
+          .           
+          8 ( 0.00%)        _Vector_base(size_t __n, const allocator_type& __a)
+          5 ( 0.00%)        : _M_impl(__a)
+         52 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_Vector_impl::_Vector_impl(std::allocator<int> const&) (1x)
+          9 ( 0.00%)        { _M_create_storage(__n); }
+        288 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_M_create_storage(unsigned long) (1x)
+          .           
+          .           #if __cplusplus >= 201103L
+          .                 _Vector_base(_Vector_base&&) = default;
+          .           
+          .                 // Kept for ABI compatibility.
+          .           # if !_GLIBCXX_INLINE_VERSION
+          .                 _Vector_base(_Tp_alloc_type&& __a) noexcept
+          .                 : _M_impl(std::move(__a)) { }
+-- line 313 ----------------------------------------
+-- line 325 ----------------------------------------
+          .                 }
+          .           # endif
+          .           
+          .                 _Vector_base(const allocator_type& __a, _Vector_base&& __x)
+          .                 : _M_impl(_Tp_alloc_type(__a), std::move(__x._M_impl))
+          .                 { }
+          .           #endif
+          .           
+         10 ( 0.00%)        ~_Vector_base() _GLIBCXX_NOEXCEPT
+          .                 {
+         14 ( 0.00%)  	_M_deallocate(_M_impl._M_start,
+      1,021 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) (1x)
+         17 ( 0.00%)  		      _M_impl._M_end_of_storage - _M_impl._M_start);
+         12 ( 0.00%)        }
+         29 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_Vector_impl::~_Vector_impl() (1x)
+          .           
+          .               public:
+          .                 _Vector_impl _M_impl;
+          .           
+          .                 pointer
+         12 ( 0.00%)        _M_allocate(size_t __n)
+          .                 {
+          .           	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+         16 ( 0.00%)  	return __n != 0 ? _Tr::allocate(_M_impl, __n) : pointer();
+        245 ( 0.00%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<int> >::allocate(std::allocator<int>&, unsigned long) (1x)
+          4 ( 0.00%)        }
+          .           
+          .                 void
+         21 ( 0.00%)        _M_deallocate(pointer __p, size_t __n)
+          .                 {
+          .           	typedef __gnu_cxx::__alloc_traits<_Tp_alloc_type> _Tr;
+          6 ( 0.00%)  	if (__p)
+         12 ( 0.00%)  	  _Tr::deallocate(_M_impl, __p, __n);
+      1,003 ( 0.00%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) (1x)
+          9 ( 0.00%)        }
+          .           
+          .               protected:
+          .                 void
+          6 ( 0.00%)        _M_create_storage(size_t __n)
+          .                 {
+          7 ( 0.00%)  	this->_M_impl._M_start = this->_M_allocate(__n);
+        261 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_M_allocate(unsigned long) (1x)
+          4 ( 0.00%)  	this->_M_impl._M_finish = this->_M_impl._M_start;
+          7 ( 0.00%)  	this->_M_impl._M_end_of_storage = this->_M_impl._M_start + __n;
+          3 ( 0.00%)        }
+          .               };
+          .           
+          .             /**
+          .              *  @brief A standard container which offers fixed time access to
+          .              *  individual elements in any order.
+          .              *
+          .              *  @ingroup sequences
+          .              *
+-- line 372 ----------------------------------------
+-- line 423 ----------------------------------------
+          .                 typedef std::reverse_iterator<iterator>		reverse_iterator;
+          .                 typedef size_t					size_type;
+          .                 typedef ptrdiff_t					difference_type;
+          .                 typedef _Alloc					allocator_type;
+          .           
+          .               private:
+          .           #if __cplusplus >= 201103L
+          .                 static constexpr bool
+          3 ( 0.00%)        _S_nothrow_relocate(true_type)
+          .                 {
+          .           	return noexcept(std::__relocate_a(std::declval<pointer>(),
+          .           					  std::declval<pointer>(),
+          .           					  std::declval<pointer>(),
+          1 ( 0.00%)  					  std::declval<_Tp_alloc_type&>()));
+          2 ( 0.00%)        }
+          .           
+          .                 static constexpr bool
+          .                 _S_nothrow_relocate(false_type)
+          .                 { return false; }
+          .           
+          .                 static constexpr bool
+          7 ( 0.00%)        _S_use_relocate()
+          .                 {
+          .           	// Instantiating std::__relocate_a might cause an error outside the
+          .           	// immediate context (in __relocate_object_a's noexcept-specifier),
+          .           	// so only do it if we know the type can be move-inserted into *this.
+          1 ( 0.00%)  	return _S_nothrow_relocate(__is_move_insertable<_Tp_alloc_type>{});
+          6 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_S_nothrow_relocate(std::integral_constant<bool, true>) (1x)
+          5 ( 0.00%)        }
+          .           
+          .                 static pointer
+          8 ( 0.00%)        _S_do_relocate(pointer __first, pointer __last, pointer __result,
+          .           		     _Tp_alloc_type& __alloc, true_type) noexcept
+          .                 {
+          6 ( 0.00%)  	return std::__relocate_a(__first, __last, __result, __alloc);
+         72 ( 0.00%)  => /usr/include/c++/11/bits/stl_uninitialized.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >* std::__relocate_a<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >(std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > >&) (1x)
+          2 ( 0.00%)        }
+          .           
+          .                 static pointer
+          .                 _S_do_relocate(pointer, pointer, pointer __result,
+          .           		     _Tp_alloc_type&, false_type) noexcept
+          .                 { return __result; }
+          .           
+          .                 static pointer
+          8 ( 0.00%)        _S_relocate(pointer __first, pointer __last, pointer __result,
+          .           		  _Tp_alloc_type& __alloc) noexcept
+          .                 {
+          .           	using __do_it = __bool_constant<_S_use_relocate()>;
+          6 ( 0.00%)  	return _S_do_relocate(__first, __last, __result, __alloc, __do_it{});
+         88 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_S_do_relocate(std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >*, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > >&, std::integral_constant<bool, true>) (1x)
+          2 ( 0.00%)        }
+          .           #endif // C++11
+          .           
+          .               protected:
+          .                 using _Base::_M_allocate;
+          .                 using _Base::_M_deallocate;
+          .                 using _Base::_M_impl;
+          .                 using _Base::_M_get_Tp_allocator;
+          .           
+-- line 478 ----------------------------------------
+-- line 479 ----------------------------------------
+          .               public:
+          .                 // [23.2.4.1] construct/copy/destroy
+          .                 // (assign() and get_allocator() are also listed in this section)
+          .           
+          .                 /**
+          .                  *  @brief  Creates a %vector with no elements.
+          .                  */
+          .           #if __cplusplus >= 201103L
+         11 ( 0.00%)        vector() = default;
+         56 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_Vector_base() (1x)
+          .           #else
+          .                 vector() { }
+          .           #endif
+          .           
+          .                 /**
+          .                  *  @brief  Creates a %vector with no elements.
+          .                  *  @param  __a  An allocator object.
+          .                  */
+-- line 495 ----------------------------------------
+-- line 502 ----------------------------------------
+          .                  *  @brief  Creates a %vector with default constructed elements.
+          .                  *  @param  __n  The number of elements to initially create.
+          .                  *  @param  __a  An allocator.
+          .                  *
+          .                  *  This constructor fills the %vector with @a __n default
+          .                  *  constructed elements.
+          .                  */
+          .                 explicit
+          8 ( 0.00%)        vector(size_type __n, const allocator_type& __a = allocator_type())
+         12 ( 0.00%)        : _Base(_S_check_init_len(__n, __a), __a)
+        362 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_Vector_base(unsigned long, std::allocator<int> const&) (1x)
+        138 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<int, std::allocator<int> >::_S_check_init_len(unsigned long, std::allocator<int> const&) (1x)
+          9 ( 0.00%)        { _M_default_initialize(__n); }
+      7,196 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<int, std::allocator<int> >::_M_default_initialize(unsigned long) (1x)
+          .           
+          .                 /**
+          .                  *  @brief  Creates a %vector with copies of an exemplar element.
+          .                  *  @param  __n  The number of elements to initially create.
+          .                  *  @param  __value  An element to copy.
+          .                  *  @param  __a  An allocator.
+          .                  *
+          .                  *  This constructor fills the %vector with @a __n copies of @a __value.
+-- line 520 ----------------------------------------
+-- line 670 ----------------------------------------
+          .           #endif
+          .           
+          .                 /**
+          .                  *  The dtor only erases the elements, and note that if the
+          .                  *  elements themselves are pointers, the pointed-to memory is
+          .                  *  not touched in any way.  Managing the pointer is the user's
+          .                  *  responsibility.
+          .                  */
+         10 ( 0.00%)        ~vector() _GLIBCXX_NOEXCEPT
+          .                 {
+         14 ( 0.00%)  	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
+         37 ( 0.00%)  => /usr/include/c++/11/bits/alloc_traits.h:void std::_Destroy<int*, int>(int*, int*, std::allocator<int>&) (1x)
+          8 ( 0.00%)  		      _M_get_Tp_allocator());
+          7 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() (1x)
+          .           	_GLIBCXX_ASAN_ANNOTATE_BEFORE_DEALLOC;
+         12 ( 0.00%)        }
+      1,075 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::~_Vector_base() (1x)
+          .           
+          .                 /**
+          .                  *  @brief  %Vector assignment operator.
+          .                  *  @param  __x  A %vector of identical element and allocator types.
+          .                  *
+          .                  *  All the elements of @a __x are copied, but any unused capacity in
+          .                  *  @a __x will not be copied.
+          .                  *
+-- line 691 ----------------------------------------
+-- line 910 ----------------------------------------
+          .                 const_reverse_iterator
+          .                 crend() const noexcept
+          .                 { return const_reverse_iterator(begin()); }
+          .           #endif
+          .           
+          .                 // [23.2.4.2] capacity
+          .                 /**  Returns the number of elements in the %vector.  */
+          .                 size_type
+ 20,172,032 ( 0.16%)        size() const _GLIBCXX_NOEXCEPT
+ 60,513,093 ( 0.49%)        { return size_type(this->_M_impl._M_finish - this->_M_impl._M_start); }
+          .           
+          .                 /**  Returns the size() of the largest possible %vector.  */
+          .                 size_type
+         20 ( 0.00%)        max_size() const _GLIBCXX_NOEXCEPT
+         28 ( 0.00%)        { return _S_max_size(_M_get_Tp_allocator()); }
+        264 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_S_max_size(std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > const&) (4x)
+         28 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_M_get_Tp_allocator() const (4x)
+          .           
+          .           #if __cplusplus >= 201103L
+          .                 /**
+          .                  *  @brief  Resizes the %vector to the specified number of elements.
+          .                  *  @param  __new_size  Number of elements the %vector should contain.
+          .                  *
+          .                  *  This function will %resize the %vector to the specified
+          .                  *  number of elements.  If the number is smaller than the
+          .                  *  %vector's current size the %vector is truncated, otherwise
+          .                  *  default constructed elements are appended.
+          .                  */
+          .                 void
+          6 ( 0.00%)        resize(size_type __new_size)
+          .                 {
+          7 ( 0.00%)  	if (__new_size > size())
+         16 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const (1x)
+         11 ( 0.00%)  	  _M_default_append(__new_size - size());
+    964,017 ( 0.01%)  => /usr/include/c++/11/bits/vector.tcc:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::_M_default_append(unsigned long) (1x)
+         16 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const (1x)
+          .           	else if (__new_size < size())
+          .           	  _M_erase_at_end(this->_M_impl._M_start + __new_size);
+          4 ( 0.00%)        }
+          .           
+          .                 /**
+          .                  *  @brief  Resizes the %vector to the specified number of elements.
+          .                  *  @param  __new_size  Number of elements the %vector should contain.
+          .                  *  @param  __x  Data with which new elements should be populated.
+          .                  *
+          .                  *  This function will %resize the %vector to the specified
+          .                  *  number of elements.  If the number is smaller than the
+-- line 951 ----------------------------------------
+-- line 1035 ----------------------------------------
+          .                  *  @return  Read/write reference to data.
+          .                  *
+          .                  *  This operator allows for easy, array-style, data access.
+          .                  *  Note that data access with this operator is unchecked and
+          .                  *  out_of_range lookups are not defined. (For checked lookups
+          .                  *  see at().)
+          .                  */
+          .                 reference
+267,370,585 ( 2.16%)        operator[](size_type __n) _GLIBCXX_NOEXCEPT
+          .                 {
+          .           	__glibcxx_requires_subscript(__n);
+427,780,936 ( 3.45%)  	return *(this->_M_impl._M_start + __n);
+106,948,234 ( 0.86%)        }
+          .           
+          .                 /**
+          .                  *  @brief  Subscript access to the data contained in the %vector.
+          .                  *  @param __n The index of the element for which data should be
+          .                  *  accessed.
+          .                  *  @return  Read-only (constant) reference to data.
+          .                  *
+          .                  *  This operator allows for easy, array-style, data access.
+-- line 1055 ----------------------------------------
+-- line 1595 ----------------------------------------
+          .           	this->_M_impl._M_finish =
+          .           	  std::__uninitialized_fill_n_a(this->_M_impl._M_start, __n, __value,
+          .           					_M_get_Tp_allocator());
+          .                 }
+          .           
+          .           #if __cplusplus >= 201103L
+          .                 // Called by the vector(n) constructor.
+          .                 void
+          6 ( 0.00%)        _M_default_initialize(size_type __n)
+          .                 {
+          2 ( 0.00%)  	this->_M_impl._M_finish =
+          6 ( 0.00%)  	  std::__uninitialized_default_n_a(this->_M_impl._M_start, __n,
+      7,168 ( 0.00%)  => /usr/include/c++/11/bits/stl_uninitialized.h:int* std::__uninitialized_default_n_a<int*, unsigned long, int>(int*, unsigned long, std::allocator<int>&) (1x)
+          4 ( 0.00%)  					   _M_get_Tp_allocator());
+          7 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::_Vector_base<int, std::allocator<int> >::_M_get_Tp_allocator() (1x)
+          3 ( 0.00%)        }
+          .           #endif
+          .           
+          .                 // Internal assign functions follow.  The *_aux functions do the actual
+          .                 // assignment work for the range versions.
+          .           
+          .                 // Called by the range assign to implement [23.1.1]/9
+          .           
+          .                 // _GLIBCXX_RESOLVE_LIB_DEFECTS
+-- line 1616 ----------------------------------------
+-- line 1748 ----------------------------------------
+          .                 // Emplacing an rvalue of the correct type can use _M_insert_rval.
+          .                 iterator
+          .                 _M_emplace_aux(const_iterator __position, value_type&& __v)
+          .                 { return _M_insert_rval(__position, std::move(__v)); }
+          .           #endif
+          .           
+          .                 // Called by _M_fill_insert, _M_insert_aux etc.
+          .                 size_type
+         11 ( 0.00%)        _M_check_len(size_type __n, const char* __s) const
+          .                 {
+         14 ( 0.00%)  	if (max_size() - size() < __n)
+         85 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::max_size() const (1x)
+         16 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const (1x)
+          .           	  __throw_length_error(__N(__s));
+          .           
+         16 ( 0.00%)  	const size_type __len = size() + (std::max)(size(), __n);
+         32 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const (2x)
+         15 ( 0.00%)  => /usr/include/c++/11/bits/stl_algobase.h:unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) (1x)
+         11 ( 0.00%)  	return (__len < size() || __len > max_size()) ? max_size() : __len;
+         85 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::max_size() const (1x)
+         16 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const (1x)
+          6 ( 0.00%)        }
+          .           
+          .                 // Called by constructors to check initial size.
+          .                 static size_type
+         10 ( 0.00%)        _S_check_init_len(size_type __n, const allocator_type& __a)
+          .                 {
+         15 ( 0.00%)  	if (__n > _S_max_size(_Tp_alloc_type(__a)))
+         66 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<int, std::allocator<int> >::_S_max_size(std::allocator<int> const&) (1x)
+         22 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<int>::allocator(std::allocator<int> const&) (1x)
+         18 ( 0.00%)  => /usr/include/c++/11/bits/allocator.h:std::allocator<int>::~allocator() (1x)
+          .           	  __throw_length_error(
+          .           	      __N("cannot create std::vector larger than max_size()"));
+          1 ( 0.00%)  	return __n;
+          6 ( 0.00%)        }
+          .           
+          .                 static size_type
+         40 ( 0.00%)        _S_max_size(const _Tp_alloc_type& __a) _GLIBCXX_NOEXCEPT
+          .                 {
+          .           	// std::distance(begin(), end()) cannot be greater than PTRDIFF_MAX,
+          .           	// and realistically we can't store more than PTRDIFF_MAX/sizeof(T)
+          .           	// (even if std::allocator_traits::max_size says we can).
+         10 ( 0.00%)  	const size_t __diffmax
+          .           	  = __gnu_cxx::__numeric_traits<ptrdiff_t>::__max / sizeof(_Tp);
+         20 ( 0.00%)  	const size_t __allocmax = _Alloc_traits::max_size(__a);
+        108 ( 0.00%)  => /usr/include/c++/11/bits/alloc_traits.h:std::allocator_traits<std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::max_size(std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > const&) (4x)
+         30 ( 0.00%)  	return (std::min)(__diffmax, __allocmax);
+         56 ( 0.00%)  => /usr/include/c++/11/bits/stl_algobase.h:unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) (4x)
+         25 ( 0.00%)        }
+          .           
+          .                 // Internal erase functions follow.
+          .           
+          .                 // Called by erase(q1,q2), clear(), resize(), _M_fill_assign,
+          .                 // _M_assign_aux.
+          .                 void
+          .                 _M_erase_at_end(pointer __pos) _GLIBCXX_NOEXCEPT
+          .                 {
+-- line 1793 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/hashtable.h
+--------------------------------------------------------------------------------
+Ir                   
+
+-- line 289 ----------------------------------------
+          .           	__detail::_ReuseOrAllocNode<__node_alloc_type>;
+          .                 using __alloc_node_gen_t =
+          .           	__detail::_AllocNode<__node_alloc_type>;
+          .           
+          .                 // Simple RAII type for managing a node containing an element
+          .                 struct _Scoped_node
+          .                 {
+          .           	// Take ownership of a node with a constructed element.
+    277,866 ( 0.00%)  	_Scoped_node(__node_ptr __n, __hashtable_alloc* __h)
+    416,799 ( 0.00%)  	: _M_h(__h), _M_node(__n) { }
+          .           
+          .           	// Allocate a node and construct an element within it.
+          .           	template<typename... _Args>
+          .           	  _Scoped_node(__hashtable_alloc* __h, _Args&&... __args)
+          .           	  : _M_h(__h),
+          .           	    _M_node(__h->_M_allocate_node(std::forward<_Args>(__args)...))
+          .           	  { }
+          .           
+          .           	// Destroy element and deallocate node.
+    555,732 ( 0.00%)  	~_Scoped_node() { if (_M_node) _M_h->_M_deallocate_node(_M_node); };
+          .           
+          .           	_Scoped_node(const _Scoped_node&) = delete;
+          .           	_Scoped_node& operator=(const _Scoped_node&) = delete;
+          .           
+          .           	__hashtable_alloc* _M_h;
+          .           	__node_ptr _M_node;
+          .                 };
+          .           
+-- line 316 ----------------------------------------
+-- line 413 ----------------------------------------
+          .                 void
+          .                 _M_update_bbegin(__node_ptr __n)
+          .                 {
+          .           	_M_before_begin._M_nxt = __n;
+          .           	_M_update_bbegin();
+          .                 }
+          .           
+          .                 bool
+     50,410 ( 0.00%)        _M_uses_single_bucket(__buckets_ptr __bkts) const
+     90,738 ( 0.00%)        { return __builtin_expect(__bkts == &_M_single_bucket, false); }
+          .           
+          .                 bool
+          .                 _M_uses_single_bucket() const
+          .                 { return _M_uses_single_bucket(_M_buckets); }
+          .           
+          .                 __hashtable_alloc&
+          .                 _M_base_alloc() { return *this; }
+          .           
+          .                 __buckets_ptr
+     30,246 ( 0.00%)        _M_allocate_buckets(size_type __bkt_count)
+          .                 {
+     25,205 ( 0.00%)  	if (__builtin_expect(__bkt_count == 1, false))
+          .           	  {
+          .           	    _M_single_bucket = nullptr;
+          .           	    return &_M_single_bucket;
+          .           	  }
+          .           
+     30,246 ( 0.00%)  	return __hashtable_alloc::_M_allocate_buckets(__bkt_count);
+  1,886,129 ( 0.02%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_allocate_buckets(unsigned long) (5,041x)
+     10,082 ( 0.00%)        }
+          .           
+          .                 void
+     70,574 ( 0.00%)        _M_deallocate_buckets(__buckets_ptr __bkts, size_type __bkt_count)
+          .                 {
+     70,574 ( 0.00%)  	if (_M_uses_single_bucket(__bkts))
+    141,148 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_uses_single_bucket(std::__detail::_Hash_node_base**) const (10,082x)
+      5,041 ( 0.00%)  	  return;
+          .           
+     35,287 ( 0.00%)  	__hashtable_alloc::_M_deallocate_buckets(__bkts, __bkt_count);
+  1,330,675 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) (5,041x)
+     20,164 ( 0.00%)        }
+          .           
+          .                 void
+     50,410 ( 0.00%)        _M_deallocate_buckets()
+    110,902 ( 0.00%)        { _M_deallocate_buckets(_M_buckets, _M_bucket_count); }
+  1,673,463 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_deallocate_buckets(std::__detail::_Hash_node_base**, unsigned long) (10,082x)
+          .           
+          .                 // Gets bucket begin, deals with the fact that non-empty buckets contain
+          .                 // their before begin node.
+          .                 __node_ptr
+          .                 _M_bucket_begin(size_type __bkt) const;
+          .           
+          .                 __node_ptr
+213,554,308 ( 1.72%)        _M_begin() const
+213,554,308 ( 1.72%)        { return static_cast<__node_ptr>(_M_before_begin._M_nxt); }
+          .           
+          .                 // Assign *this using another _Hashtable instance. Whether elements
+          .                 // are copied or moved depends on the _Ht reference.
+          .                 template<typename _Ht>
+          .           	void
+          .           	_M_assign_elements(_Ht&&);
+          .           
+          .                 template<typename _Ht, typename _NodeGenerator>
+-- line 471 ----------------------------------------
+-- line 520 ----------------------------------------
+          .                 template<typename _InputIterator>
+          .           	_Hashtable(_InputIterator __first, _InputIterator __last,
+          .           		   size_type __bkt_count_hint,
+          .           		   const _Hash&, const _Equal&, const allocator_type&,
+          .           		   false_type __uks);
+          .           
+          .               public:
+          .                 // Constructor, destructor, assignment, swap
+    171,394 ( 0.00%)        _Hashtable() = default;
+    201,640 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_Hashtable_alloc() (5,041x)
+    196,599 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_base<int, int, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, true, true> >::_Hashtable_base() (5,041x)
+     65,533 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Prime_rehash_policy::_Prime_rehash_policy(float) (5,041x)
+     45,369 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node_base::_Hash_node_base() (5,041x)
+          .           
+          .                 _Hashtable(const _Hashtable&);
+          .           
+          .                 _Hashtable(const _Hashtable&, const allocator_type&);
+          .           
+          .                 explicit
+          .                 _Hashtable(size_type __bkt_count_hint,
+          .           		 const _Hash& __hf = _Hash(),
+-- line 536 ----------------------------------------
+-- line 613 ----------------------------------------
+          .           
+          .                 void
+          .                 swap(_Hashtable&)
+          .                 noexcept(__and_<__is_nothrow_swappable<_Hash>,
+          .           		      __is_nothrow_swappable<_Equal>>::value);
+          .           
+          .                 // Basic container operations
+          .                 iterator
+427,027,960 ( 3.45%)        begin() noexcept
+747,298,930 ( 6.03%)        { return iterator(_M_begin()); }
+1,334,462,375 (10.78%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::_Node_iterator(std::__detail::_Hash_node<int, false>*) (53,378,495x)
+427,027,960 ( 3.45%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_begin() const (53,378,495x)
+          .           
+          .                 const_iterator
+          .                 begin() const noexcept
+          .                 { return const_iterator(_M_begin()); }
+          .           
+          .                 iterator
+427,027,960 ( 3.45%)        end() noexcept
+533,784,950 ( 4.31%)        { return iterator(nullptr); }
+1,334,462,375 (10.78%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::_Node_iterator(std::__detail::_Hash_node<int, false>*) (53,378,495x)
+          .           
+          .                 const_iterator
+          .                 end() const noexcept
+          .                 { return const_iterator(nullptr); }
+          .           
+          .                 const_iterator
+          .                 cbegin() const noexcept
+          .                 { return const_iterator(_M_begin()); }
+-- line 638 ----------------------------------------
+-- line 782 ----------------------------------------
+          .           	       typename = __has_is_transparent_t<_Equal, _Kt>>
+          .           	pair<const_iterator, const_iterator>
+          .           	_M_equal_range_tr(const _Kt& __k) const;
+          .           #endif // C++20
+          .           
+          .               private:
+          .                 // Bucket index computation helpers.
+          .                 size_type
+     15,378 ( 0.00%)        _M_bucket_index(const __node_value_type& __n) const noexcept
+     23,067 ( 0.00%)        { return __hash_code_base::_M_bucket_index(__n, _M_bucket_count); }
+    369,072 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(std::__detail::_Hash_node_value<int, false> const&, unsigned long) const (2,563x)
+          .           
+          .                 size_type
+    579,978 ( 0.00%)        _M_bucket_index(__hash_code __c) const
+    869,967 ( 0.01%)        { return __hash_code_base::_M_bucket_index(__c, _M_bucket_count); }
+  3,189,879 ( 0.03%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_bucket_index(unsigned long, unsigned long) const (96,663x)
+          .           
+          .                 // Find and insert helper functions and types
+          .                 // Find the node before the one matching the criteria.
+          .                 __node_base_ptr
+          .                 _M_find_before_node(size_type, const key_type&, __hash_code) const;
+          .           
+          .                 template<typename _Kt>
+          .           	__node_base_ptr
+          .           	_M_find_before_node_tr(size_type, const _Kt&, __hash_code) const;
+          .           
+          .                 __node_ptr
+    370,488 ( 0.00%)        _M_find_node(size_type __bkt, const key_type& __key,
+          .           		   __hash_code __c) const
+          .                 {
+    324,177 ( 0.00%)  	__node_base_ptr __before_n = _M_find_before_node(__bkt, __key, __c);
+    996,699 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const (46,311x)
+     92,622 ( 0.00%)  	if (__before_n)
+          .           	  return static_cast<__node_ptr>(__before_n->_M_nxt);
+     46,311 ( 0.00%)  	return nullptr;
+     92,622 ( 0.00%)        }
+          .           
+          .                 template<typename _Kt>
+          .           	__node_ptr
+          .           	_M_find_node_tr(size_type __bkt, const _Kt& __key,
+          .           			__hash_code __c) const
+          .           	{
+          .           	  auto __before_n = _M_find_before_node_tr(__bkt, __key, __c);
+          .           	  if (__before_n)
+-- line 822 ----------------------------------------
+-- line 929 ----------------------------------------
+          .                 erase(const_iterator);
+          .           
+          .                 // LWG 2059.
+          .                 iterator
+          .                 erase(iterator __it)
+          .                 { return erase(const_iterator(__it)); }
+          .           
+          .                 size_type
+    271,866 ( 0.00%)        erase(const key_type& __k)
+    317,177 ( 0.00%)        { return _M_erase(__unique_keys{}, __k); }
+ 32,964,902 ( 0.27%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_erase(std::integral_constant<bool, true>, int const&) (45,311x)
+          .           
+          .                 iterator
+          .                 erase(const_iterator, const_iterator);
+          .           
+          .                 void
+          .                 clear() noexcept;
+          .           
+          .                 // Set number of buckets keeping it appropriate for container's number
+-- line 946 ----------------------------------------
+-- line 1520 ----------------------------------------
+          .           	  __ht.clear();
+          .           	}
+          .               }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+     25,205 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               ~_Hashtable() noexcept
+          .               {
+     15,123 ( 0.00%)        clear();
+    677,721 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::clear() (5,041x)
+     15,123 ( 0.00%)        _M_deallocate_buckets();
+  1,597,848 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_deallocate_buckets() (5,041x)
+     30,246 ( 0.00%)      }
+    201,640 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::~_Hashtable_alloc() (5,041x)
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+          .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+-- line 1542 ----------------------------------------
+-- line 1819 ----------------------------------------
+          .           
+          .             // Find the node before the one whose key compares equal to k in the bucket
+          .             // bkt. Return nullptr if no node is found.
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+    732,976 ( 0.01%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_find_before_node(size_type __bkt, const key_type& __k,
+          .           			__hash_code __code) const
+          .               -> __node_base_ptr
+          .               {
+    641,354 ( 0.01%)        __node_base_ptr __prev_p = _M_buckets[__bkt];
+    183,244 ( 0.00%)        if (!__prev_p)
+     92,318 ( 0.00%)  	return nullptr;
+          .           
+    136,389 ( 0.00%)        for (__node_ptr __p = static_cast<__node_ptr>(__prev_p->_M_nxt);;
+        376 ( 0.00%)  	   __p = __p->_M_next())
+        752 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (94x)
+          .           	{
+    410,107 ( 0.00%)  	  if (this->_M_equals(__k, __code, *__p))
+  6,377,734 ( 0.05%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_base<int, int, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<false, true, true> >::_M_equals(int const&, unsigned long, std::__detail::_Hash_node_value<int, false> const&) const (45,557x)
+     90,622 ( 0.00%)  	    return __prev_p;
+          .           
+      2,814 ( 0.00%)  	  if (!__p->_M_nxt || _M_bucket_index(*__p->_M_next()) != __bkt)
+     14,946 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_bucket_index(std::__detail::_Hash_node_value<int, false> const&) const (94x)
+        752 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (94x)
+        152 ( 0.00%)  	    break;
+        188 ( 0.00%)  	  __prev_p = __p;
+          .           	}
+          .           
+        152 ( 0.00%)        return nullptr;
+    183,244 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               template<typename _Kt>
+          .                 auto
+          .                 _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+-- line 1857 ----------------------------------------
+-- line 1878 ----------------------------------------
+          .           	return nullptr;
+          .                 }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+    370,488 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_insert_bucket_begin(size_type __bkt, __node_ptr __node)
+          .               {
+    370,488 ( 0.00%)        if (_M_buckets[__bkt])
+          .           	{
+          .           	  // Bucket is not empty, we just need to insert the new node
+          .           	  // after the bucket before begin.
+      1,368 ( 0.00%)  	  __node->_M_nxt = _M_buckets[__bkt]->_M_nxt;
+      1,216 ( 0.00%)  	  _M_buckets[__bkt]->_M_nxt = __node;
+          .           	}
+          .                 else
+          .           	{
+          .           	  // The bucket is empty, the new node is inserted at the
+          .           	  // beginning of the singly-linked list and the bucket will
+          .           	  // contain _M_before_begin pointer.
+    184,636 ( 0.00%)  	  __node->_M_nxt = _M_before_begin._M_nxt;
+    138,477 ( 0.00%)  	  _M_before_begin._M_nxt = __node;
+          .           
+    184,636 ( 0.00%)  	  if (__node->_M_nxt)
+          .           	    // We must update former begin bucket that is pointing to
+          .           	    // _M_before_begin.
+     24,514 ( 0.00%)  	    _M_buckets[_M_bucket_index(*__node->_M_next())] = __node;
+    278,409 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_bucket_index(std::__detail::_Hash_node_value<int, false> const&) const (1,751x)
+     14,008 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (1,751x)
+          .           
+    369,272 ( 0.00%)  	  _M_buckets[__bkt] = &_M_before_begin;
+          .           	}
+    185,396 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+    316,519 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_remove_bucket_begin(size_type __bkt, __node_ptr __next,
+          .           			   size_type __next_bkt)
+          .               {
+     92,588 ( 0.00%)        if (!__next || __next_bkt != __bkt)
+          .           	{
+          .           	  // Bucket is now empty
+          .           	  // First update next bucket if any
+     90,320 ( 0.00%)  	  if (__next)
+      7,932 ( 0.00%)  	    _M_buckets[__next_bkt] = _M_buckets[__bkt];
+          .           
+          .           	  // Second update before begin node if necessary
+    451,600 ( 0.00%)  	  if (&_M_before_begin == _M_buckets[__bkt])
+    132,231 ( 0.00%)  	    _M_before_begin._M_nxt = __next;
+    270,960 ( 0.00%)  	  _M_buckets[__bkt] = nullptr;
+          .           	}
+    135,651 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+          .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+-- line 1944 ----------------------------------------
+-- line 2000 ----------------------------------------
+          .           	return __pos;
+          .                 }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+    555,732 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_insert_unique_node(size_type __bkt, __hash_code __code,
+          .           			  __node_ptr __node, size_type __n_elt)
+          .               -> iterator
+          .               {
+    324,177 ( 0.00%)        const __rehash_state& __saved_state = _M_rehash_policy._M_state();
+    370,488 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Prime_rehash_policy::_M_state() const (46,311x)
+          .                 std::pair<bool, std::size_t> __do_rehash
+    602,043 ( 0.00%)  	= _M_rehash_policy._M_need_rehash(_M_bucket_count, _M_element_count,
+    933,853 ( 0.01%)  => ???:0x000000000010a460 (46,311x)
+          .           					  __n_elt);
+          .           
+    138,933 ( 0.00%)        if (__do_rehash.first)
+          .           	{
+     30,246 ( 0.00%)  	  _M_rehash(__do_rehash.second, __saved_state);
+  2,516,254 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) (5,041x)
+     30,246 ( 0.00%)  	  __bkt = _M_bucket_index(__code);
+    241,968 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_bucket_index(unsigned long) const (5,041x)
+          .           	}
+          .           
+    324,177 ( 0.00%)        this->_M_store_code(*__node, __code);
+    416,799 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_store_code(std::__detail::_Hash_node_code_cache<false>&, unsigned long) const (46,311x)
+          .           
+          .                 // Always insert at the beginning of the bucket.
+    277,866 ( 0.00%)        _M_insert_bucket_begin(__bkt, __node);
+  2,122,908 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert_bucket_begin(unsigned long, std::__detail::_Hash_node<int, false>*) (46,311x)
+    231,555 ( 0.00%)        ++_M_element_count;
+    277,866 ( 0.00%)        return iterator(__node);
+  1,157,775 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::_Node_iterator(std::__detail::_Hash_node<int, false>*) (46,311x)
+    231,555 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+          .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+-- line 2039 ----------------------------------------
+-- line 2087 ----------------------------------------
+          .           
+          .             // Insert v if no element with its key is already present.
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               template<typename _Arg, typename _NodeGenerator>
+          .                 auto
+    602,043 ( 0.00%)        _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           		 _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .                 _M_insert(_Arg&& __v, const _NodeGenerator& __node_gen,
+          .           		true_type /* __uks */)
+          .                 -> pair<iterator, bool>
+          .                 {
+    277,866 ( 0.00%)  	const key_type& __k = _ExtractKey{}(__v);
+    833,598 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:int const& std::__detail::_Identity::operator()<int const&>(int const&) const (46,311x)
+    277,866 ( 0.00%)  	__hash_code __code = this->_M_hash_code(__k);
+  1,991,373 ( 0.02%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const (46,311x)
+    277,866 ( 0.00%)  	size_type __bkt = _M_bucket_index(__code);
+  2,222,928 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_bucket_index(unsigned long) const (46,311x)
+          .           
+    416,799 ( 0.00%)  	if (__node_ptr __node = _M_find_node(__bkt, __k, __code))
+  1,922,919 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_find_node(unsigned long, int const&, unsigned long) const (46,311x)
+          .           	  return { iterator(__node), false };
+          .           
+    648,354 ( 0.01%)  	_Scoped_node __node{ __node_gen(std::forward<_Arg>(__v)), this };
+ 15,889,740 ( 0.13%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>* std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<int, false> > >::operator()<int const&>(int const&) const (46,311x)
+    694,665 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_Scoped_node::_Scoped_node(std::__detail::_Hash_node<int, false>*, std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >*) (46,311x)
+    324,177 ( 0.00%)  => /usr/include/c++/11/bits/move.h:int const& std::forward<int const&>(std::remove_reference<int const&>::type&) (46,311x)
+          .           	auto __pos
+    370,488 ( 0.00%)  	  = _M_insert_unique_node(__bkt, __code, __node._M_node);
+ 10,784,441 ( 0.09%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<int, false>*, unsigned long) (46,311x)
+     46,311 ( 0.00%)  	__node._M_node = nullptr;
+    416,799 ( 0.00%)  	return { __pos, true };
+  1,667,196 ( 0.01%)  => /usr/include/c++/11/bits/stl_pair.h:std::pair<std::__detail::_Node_iterator<int, true, false>, bool>::pair<std::__detail::_Node_iterator<int, true, false>&, bool, true>(std::__detail::_Node_iterator<int, true, false>&, bool&&) (46,311x)
+    648,354 ( 0.01%)        }
+    555,732 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_Scoped_node::~_Scoped_node() (46,311x)
+          .           
+          .             // Insert v unconditionally.
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               template<typename _Arg, typename _NodeGenerator>
+          .                 auto
+-- line 2121 ----------------------------------------
+-- line 2158 ----------------------------------------
+          .                 return _M_erase(__bkt, __prev_n, __n);
+          .               }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+    543,732 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_erase(size_type __bkt, __node_base_ptr __prev_n, __node_ptr __n)
+          .               -> iterator
+          .               {
+    362,488 ( 0.00%)        if (__prev_n == _M_buckets[__bkt])
+    587,103 ( 0.00%)  	_M_remove_bucket_begin(__bkt, __n->_M_next(),
+  1,497,801 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_remove_bucket_begin(unsigned long, std::__detail::_Hash_node<int, false>*, unsigned long) (45,217x)
+    361,736 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (45,217x)
+     97,614 ( 0.00%)  	  __n->_M_nxt ? _M_bucket_index(*__n->_M_next()) : 0);
+      5,744 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (718x)
+    114,162 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_bucket_index(std::__detail::_Hash_node_value<int, false> const&) const (718x)
+        376 ( 0.00%)        else if (__n->_M_nxt)
+          .           	{
+          .           	  size_type __next_bkt = _M_bucket_index(*__n->_M_next());
+          .           	  if (__next_bkt != __bkt)
+          .           	    _M_buckets[__next_bkt] = __prev_n;
+          .           	}
+          .           
+    181,244 ( 0.00%)        __prev_n->_M_nxt = __n->_M_nxt;
+    362,488 ( 0.00%)        iterator __result(__n->_M_next());
+  1,132,775 ( 0.01%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::_Node_iterator(std::__detail::_Hash_node<int, false>*) (45,311x)
+    362,488 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_node<int, false>::_M_next() const (45,311x)
+    226,555 ( 0.00%)        this->_M_deallocate_node(__n);
+ 12,823,013 ( 0.10%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_deallocate_node(std::__detail::_Hash_node<int, false>*) (45,311x)
+    226,555 ( 0.00%)        --_M_element_count;
+          .           
+     45,311 ( 0.00%)        return __result;
+    271,866 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+    271,866 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_erase(true_type /* __uks */, const key_type& __k)
+          .               -> size_type
+          .               {
+    271,866 ( 0.00%)        __hash_code __code = this->_M_hash_code(__k);
+  1,948,373 ( 0.02%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hash_code_base<int, int, std::__detail::_Identity, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, false>::_M_hash_code(int const&) const (45,311x)
+    271,866 ( 0.00%)        std::size_t __bkt = _M_bucket_index(__code);
+  2,174,928 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_bucket_index(unsigned long) const (45,311x)
+          .           
+          .                 // Look for the node before the first matching node.
+    317,177 ( 0.00%)        __node_base_ptr __prev_n = _M_find_before_node(__bkt, __k, __code);
+  7,871,421 ( 0.06%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_find_before_node(unsigned long, int const&, unsigned long) const (45,311x)
+     90,622 ( 0.00%)        if (!__prev_n)
+          .           	return 0;
+          .           
+          .                 // We found a matching node, erase it.
+    135,933 ( 0.00%)        __node_ptr __n = static_cast<__node_ptr>(__prev_n->_M_nxt);
+    271,866 ( 0.00%)        _M_erase(__bkt, __prev_n, __n);
+ 19,203,051 ( 0.16%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_erase(unsigned long, std::__detail::_Hash_node_base*, std::__detail::_Hash_node<int, false>*) (45,311x)
+     45,311 ( 0.00%)        return 1;
+     90,622 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               auto
+          .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+-- line 2219 ----------------------------------------
+-- line 2308 ----------------------------------------
+          .                 return iterator(__n);
+          .               }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+     25,205 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               clear() noexcept
+          .               {
+     40,328 ( 0.00%)        this->_M_deallocate_nodes(_M_begin());
+    390,384 ( 0.00%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Hashtable_alloc<std::allocator<std::__detail::_Hash_node<int, false> > >::_M_deallocate_nodes(std::__detail::_Hash_node<int, false>*) (5,041x)
+     40,328 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_begin() const (5,041x)
+     30,246 ( 0.00%)        __builtin_memset(_M_buckets, 0,
+    105,861 ( 0.00%)  => ???:0x000000000010a350 (5,041x)
+     10,082 ( 0.00%)  		       _M_bucket_count * sizeof(__node_base_ptr));
+     10,082 ( 0.00%)        _M_element_count = 0;
+     10,082 ( 0.00%)        _M_before_begin._M_nxt = nullptr;
+     15,123 ( 0.00%)      }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+          .               _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+-- line 2333 ----------------------------------------
+-- line 2347 ----------------------------------------
+          .           	_M_rehash_policy._M_reset(__saved_state);
+          .               }
+          .           
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+     40,328 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_rehash(size_type __bkt_count, const __rehash_state& __state)
+          .               {
+          .                 __try
+          .           	{
+     25,205 ( 0.00%)  	  _M_rehash_aux(__bkt_count, __unique_keys{});
+  2,430,557 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash_aux(unsigned long, std::integral_constant<bool, true>) (5,041x)
+          .           	}
+          .                 __catch(...)
+          .           	{
+          .           	  // A failure here means that buckets allocation failed.  We only
+          .           	  // have to restore hash policy previous state.
+          .           	  _M_rehash_policy._M_reset(__state);
+          .           	  __throw_exception_again;
+          .           	}
+     20,164 ( 0.00%)      }
+          .           
+          .             // Rehash when there is no equivalent elements.
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+     30,246 ( 0.00%)      _Hashtable<_Key, _Value, _Alloc, _ExtractKey, _Equal,
+          .           	       _Hash, _RangeHash, _Unused, _RehashPolicy, _Traits>::
+          .               _M_rehash_aux(size_type __bkt_count, true_type /* __uks */)
+          .               {
+     30,246 ( 0.00%)        __buckets_ptr __new_buckets = _M_allocate_buckets(__bkt_count);
+  1,981,908 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_allocate_buckets(unsigned long) (5,041x)
+     20,164 ( 0.00%)        __node_ptr __p = _M_begin();
+     40,328 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_begin() const (5,041x)
+     10,082 ( 0.00%)        _M_before_begin._M_nxt = nullptr;
+      5,041 ( 0.00%)        std::size_t __bbegin_bkt = 0;
+     15,123 ( 0.00%)        while (__p)
+          .           	{
+          .           	  __node_ptr __next = __p->_M_next();
+          .           	  std::size_t __bkt
+          .           	    = __hash_code_base::_M_bucket_index(*__p, __bkt_count);
+          .           	  if (!__new_buckets[__bkt])
+          .           	    {
+          .           	      __p->_M_nxt = _M_before_begin._M_nxt;
+          .           	      _M_before_begin._M_nxt = __p;
+-- line 2394 ----------------------------------------
+-- line 2401 ----------------------------------------
+          .           	    {
+          .           	      __p->_M_nxt = __new_buckets[__bkt]->_M_nxt;
+          .           	      __new_buckets[__bkt]->_M_nxt = __p;
+          .           	    }
+          .           
+          .           	  __p = __next;
+          .           	}
+          .           
+     15,123 ( 0.00%)        _M_deallocate_buckets();
+    236,927 ( 0.00%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_deallocate_buckets() (5,041x)
+     15,123 ( 0.00%)        _M_bucket_count = __bkt_count;
+     15,123 ( 0.00%)        _M_buckets = __new_buckets;
+     15,123 ( 0.00%)      }
+          .           
+          .             // Rehash when there can be equivalent elements, preserve their relative
+          .             // order.
+          .             template<typename _Key, typename _Value, typename _Alloc,
+          .           	   typename _ExtractKey, typename _Equal,
+          .           	   typename _Hash, typename _RangeHash, typename _Unused,
+          .           	   typename _RehashPolicy, typename _Traits>
+          .               void
+-- line 2420 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/ext/aligned_buffer.h
+--------------------------------------------------------------------------------
+Ir                  
+
+-- line 94 ----------------------------------------
+         .           	std::aligned_storage<sizeof(_Tp), __alignof__(_Tp)>::type _M_storage;
+         .           
+         .                 __aligned_buffer() = default;
+         .           
+         .                 // Can be used to avoid value-initialization
+         .                 __aligned_buffer(std::nullptr_t) { }
+         .           
+         .                 void*
+44,983,572 ( 0.36%)        _M_addr() noexcept
+         .                 {
+11,245,893 ( 0.09%)          return static_cast<void*>(&_M_storage);
+22,491,786 ( 0.18%)        }
+         .           
+         .                 const void*
+   192,480 ( 0.00%)        _M_addr() const noexcept
+         .                 {
+    48,120 ( 0.00%)          return static_cast<const void*>(&_M_storage);
+    96,240 ( 0.00%)        }
+         .           
+         .                 _Tp*
+56,229,465 ( 0.45%)        _M_ptr() noexcept
+56,229,465 ( 0.45%)        { return static_cast<_Tp*>(_M_addr()); }
+78,721,251 ( 0.64%)  => /usr/include/c++/11/ext/aligned_buffer.h:__gnu_cxx::__aligned_buffer<int>::_M_addr() (11,245,893x)
+         .           
+         .                 const _Tp*
+   240,600 ( 0.00%)        _M_ptr() const noexcept
+   240,600 ( 0.00%)        { return static_cast<const _Tp*>(_M_addr()); }
+   336,840 ( 0.00%)  => /usr/include/c++/11/ext/aligned_buffer.h:__gnu_cxx::__aligned_buffer<int>::_M_addr() const (48,120x)
+         .               };
+         .           #endif
+         .           
+         .           } // namespace
+         .           
+         .           #endif /* _ALIGNED_BUFFER_H */
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: /usr/include/c++/11/bits/unordered_set.h
+--------------------------------------------------------------------------------
+Ir                   
+
+-- line 89 ----------------------------------------
+          .              *
+          .              *  Base is _Hashtable, dispatched at compile time via template
+          .              *  alias __uset_hashtable.
+          .              */
+          .             template<typename _Value,
+          .           	   typename _Hash = hash<_Value>,
+          .           	   typename _Pred = equal_to<_Value>,
+          .           	   typename _Alloc = allocator<_Value>>
+     55,451 ( 0.00%)      class unordered_set
+  2,562,906 ( 0.02%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::~_Hashtable() (5,041x)
+          .               {
+          .                 typedef __uset_hashtable<_Value, _Hash, _Pred, _Alloc>  _Hashtable;
+          .                 _Hashtable _M_h;
+          .           
+          .               public:
+          .                 // typedefs:
+          .                 ///@{
+          .                 /// Public typedefs.
+-- line 105 ----------------------------------------
+-- line 127 ----------------------------------------
+          .           #if __cplusplus > 201402L
+          .                 using node_type = typename _Hashtable::node_type;
+          .                 using insert_return_type = typename _Hashtable::insert_return_type;
+          .           #endif
+          .           
+          .                 // construct/destroy/copy
+          .           
+          .                 /// Default constructor.
+     55,451 ( 0.00%)        unordered_set() = default;
+    680,535 ( 0.01%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_Hashtable() (5,041x)
+          .           
+          .                 /**
+          .                  *  @brief  Default constructor creates no elements.
+          .                  *  @param __n  Minimal initial number of buckets.
+          .                  *  @param __hf  A hash functor.
+          .                  *  @param __eql  A key equality functor.
+          .                  *  @param __a  An allocator object.
+          .                  */
+-- line 143 ----------------------------------------
+-- line 312 ----------------------------------------
+          .                 // iterators.
+          .           
+          .                 ///@{
+          .                 /**
+          .                  *  Returns a read-only (constant) iterator that points to the first
+          .                  *  element in the %unordered_set.
+          .                  */
+          .                 iterator
+266,892,475 ( 2.16%)        begin() noexcept
+266,892,475 ( 2.16%)        { return _M_h.begin(); }
+2,935,817,225 (23.71%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::begin() (53,378,495x)
+          .           
+          .                 const_iterator
+          .                 begin() const noexcept
+          .                 { return _M_h.begin(); }
+          .                 ///@}
+          .           
+          .                 ///@{
+          .                 /**
+          .                  *  Returns a read-only (constant) iterator that points one past the last
+          .                  *  element in the %unordered_set.
+          .                  */
+          .                 iterator
+266,892,475 ( 2.16%)        end() noexcept
+266,892,475 ( 2.16%)        { return _M_h.end(); }
+2,295,275,285 (18.54%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::end() (53,378,495x)
+          .           
+          .                 const_iterator
+          .                 end() const noexcept
+          .                 { return _M_h.end(); }
+          .                 ///@}
+          .           
+          .                 /**
+          .                  *  Returns a read-only (constant) iterator that points to the first
+-- line 343 ----------------------------------------
+-- line 413 ----------------------------------------
+          .                  *
+          .                  *  This function attempts to insert an element into the %unordered_set.
+          .                  *  An %unordered_set relies on unique keys and thus an element is only
+          .                  *  inserted if it is not already present in the %unordered_set.
+          .                  *
+          .                  *  Insertion requires amortized constant time.
+          .                  */
+          .                 std::pair<iterator, bool>
+    277,866 ( 0.00%)        insert(const value_type& __x)
+    324,177 ( 0.00%)        { return _M_h.insert(__x); }
+ 43,046,132 ( 0.35%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Insert_base<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::insert(int const&) (46,311x)
+          .           
+          .                 std::pair<iterator, bool>
+          .                 insert(value_type&& __x)
+          .                 { return _M_h.insert(std::move(__x)); }
+          .                 ///@}
+          .           
+          .                 ///@{
+          .                 /**
+-- line 430 ----------------------------------------
+-- line 537 ----------------------------------------
+          .                  *  This function erases all the elements located by the given key from
+          .                  *  an %unordered_set. For an %unordered_set the result of this function
+          .                  *  can only be 0 (not present) or 1 (present).
+          .                  *  Note that this function only erases the element, and that if
+          .                  *  the element is itself a pointer, the pointed-to memory is not touched
+          .                  *  in any way.  Managing the pointer is the user's responsibility.
+          .                  */
+          .                 size_type
+    271,866 ( 0.00%)        erase(const key_type& __x)
+    317,177 ( 0.00%)        { return _M_h.erase(__x); }
+ 33,553,945 ( 0.27%)  => /usr/include/c++/11/bits/hashtable.h:std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::erase(int const&) (45,311x)
+          .           
+          .                 /**
+          .                  *  @brief Erases a [__first,__last) range of elements from an
+          .                  *  %unordered_set.
+          .                  *  @param  __first  Iterator pointing to the start of the range to be
+          .                  *                  erased.
+          .                  *  @param __last  Iterator pointing to the end of the range to
+          .                  *                be erased.
+-- line 554 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: serial.cpp
+--------------------------------------------------------------------------------
+Ir                     
+
+            .           #include "common.h"
+            .           #include <cmath>
+            .           
+            .           // Apply the force from neighbor to particle
+    7,774,656 ( 0.06%)  void apply_force(particle_t& particle, particle_t& neighbor) {
+            .               // Calculate Distance
+    7,774,656 ( 0.06%)      double dx = neighbor.x - particle.x;
+    7,774,656 ( 0.06%)      double dy = neighbor.y - particle.y;
+    9,070,432 ( 0.07%)      double r2 = dx * dx + dy * dy;
+            .           
+            .               // Check if the two particles should interact
+            .               
+            .               // if distance two particles > cutoff, no force is applied = don't interact
+    3,887,328 ( 0.03%)      if (r2 > cutoff * cutoff)
+    1,200,362 ( 0.01%)          return;
+            .           
+      667,898 ( 0.01%)      r2 = fmax(r2, min_r * min_r);
+      763,312 ( 0.01%)  => ???:0x000000000010a440 (95,414x)
+      477,070 ( 0.00%)      double r = sqrt(r2);
+      954,140 ( 0.01%)  => ???:0x000000000010a390 (95,414x)
+            .           
+            .               // Very simple short-range repulsive force
+      858,726 ( 0.01%)      double coef = (1 - cutoff / r) / r2 / mass;
+      667,898 ( 0.01%)      particle.ax += coef * dx;
+      763,312 ( 0.01%)      particle.ay += coef * dy;
+    2,591,552 ( 0.02%)  }
+            .           
+            .           // Integrate the ODE
+    5,000,000 ( 0.04%)  void move(particle_t& p, double size) {
+            .               // Slightly simplified Velocity Verlet integration
+            .               // Conserves energy better than explicit Euler method
+            .               
+    9,000,000 ( 0.07%)      p.vx += p.ax * dt; // velocity += acceleration * time
+    9,000,000 ( 0.07%)      p.vy += p.ay * dt;
+    9,000,000 ( 0.07%)      p.x += p.vx * dt;  // position += velocity * time
+    9,000,000 ( 0.07%)      p.y += p.vy * dt;
+            .           
+            .               // Bounce from walls
+   10,002,822 ( 0.08%)      while (p.x < 0 || p.x > size) {
+        4,776 ( 0.00%)          p.x = p.x < 0 ? -p.x : 2 * size - p.x;
+        2,388 ( 0.00%)          p.vx = -p.vx;
+            .               }
+            .           
+   10,002,878 ( 0.08%)      while (p.y < 0 || p.y > size) {
+        4,968 ( 0.00%)          p.y = p.y < 0 ? -p.y : 2 * size - p.y;
+        2,484 ( 0.00%)          p.vy = -p.vy;
+            .               }
+    4,000,000 ( 0.03%)  }
+            .           
+            .           // Global grid instance
+           10 ( 0.00%)  grid simulation_grid;
+           78 ( 0.00%)  => /home/mashalimay/HPPC/hw2/hw2/common.h:grid::grid() (1x)
+           77 ( 0.00%)  => ???:0x000000000010a3b0 (1x)
+           11 ( 0.00%)  void init_simulation(particle_t* parts, int num_parts, double size, double bsize) {
+            4 ( 0.00%)      simulation_grid.block_size = bsize * cutoff;
+            8 ( 0.00%)      simulation_grid.blocks_per_row = int(ceil(size / simulation_grid.block_size));
+            5 ( 0.00%)  => ???:0x000000000010a300 (1x)
+            .           
+            .               // initialize (blocks_per_row x blocks_per_row) grid of blocks representing the xy plane
+            8 ( 0.00%)      simulation_grid.blocks.resize(simulation_grid.blocks_per_row * simulation_grid.blocks_per_row);
+      964,077 ( 0.01%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::resize(unsigned long) (1x)
+            .           
+            .               // Assign particles to respective blocks based on `x` and `y` coordinates
+        6,005 ( 0.00%)      for (int i = 0; i < num_parts; ++i) {
+       26,000 ( 0.00%)          int block_id = simulation_grid.get_block_index(parts[i].x, parts[i].y);
+       26,000 ( 0.00%)  => /home/mashalimay/HPPC/hw2/hw2/common.h:grid::get_block_index(double, double) const (1,000x)
+       11,000 ( 0.00%)          simulation_grid.blocks[block_id].insert(i);
+    1,650,306 ( 0.01%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::insert(int const&) (1,000x)
+       15,000 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::operator[](unsigned long) (1,000x)
+       11,000 ( 0.00%)          parts[i].block_id = block_id;
+            .               }
+            .           
+            .               // initialize with zero acceleration
+        4,005 ( 0.00%)      for (int i = 0; i < num_parts; ++i) {
+       22,000 ( 0.00%)          parts[i].ax = parts[i].ay = 0;
+            .               }
+            .           
+            6 ( 0.00%)  }
+            .           
+            .           // // iterate over the particles
+            .           // void simulate_one_step(particle_t* parts, int num_parts, double size) {
+            .           //     // for each particle, 
+            .           //     for (int i = 0; i < num_parts; ++i) {
+            .           
+            .           //         // get the block where the particle is located
+            .           //         int block_id = simulation_grid.get_block_index(parts[i].x, parts[i].y);
+-- line 77 ----------------------------------------
+-- line 107 ----------------------------------------
+            .           //         parts[i].ax = parts[i].ay = 0;
+            .           //     }
+            .           //     simulation_grid.update_blocks(parts, num_parts);
+            .           // }
+            .           
+            .           
+            .           
+            .           // iterate over the blocks
+       11,000 ( 0.00%)  void simulate_one_step(particle_t* parts, int num_parts, double size) {
+            .               // Iterate over each block
+   50,421,000 ( 0.41%)      for (int block_id = 0; block_id < simulation_grid.blocks.size(); ++block_id) {
+   80,672,000 ( 0.65%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::size() const (5,042,000x)
+            .                   // Compute forces within the current block and with neighboring blocks
+   65,533,000 ( 0.53%)          for (int drow = -1; drow <= 1; drow++) {
+  196,599,000 ( 1.59%)              for (int dcol = -1; dcol <= 1; dcol++) {
+  362,952,000 ( 2.93%)                  int neighbor_block_row = (block_id / simulation_grid.blocks_per_row) + drow;
+  317,583,000 ( 2.56%)                  int neighbor_block_col = (block_id % simulation_grid.blocks_per_row) + dcol;
+            .           
+            .                           // Check if the neighbor block is within bounds
+  316,092,000 ( 2.55%)                  if (neighbor_block_row >= 0 && neighbor_block_row < simulation_grid.blocks_per_row &&
+  134,196,000 ( 1.08%)                      neighbor_block_col >= 0 && neighbor_block_col < simulation_grid.blocks_per_row) {
+            .                               
+  267,126,000 ( 2.16%)                      int neighbor_block_id = neighbor_block_row * simulation_grid.blocks_per_row + neighbor_block_col;
+            .           
+            .                               // Apply forces between particles in the current block and the neighbor block
+1,156,845,425 ( 9.34%)                      for (int i : simulation_grid.blocks[block_id]) {
+2,893,865,000 (23.37%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::begin() (44,521,000x)
+2,359,613,000 (19.06%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::end() (44,521,000x)
+  693,920,435 ( 5.60%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::operator!=(std::__detail::_Node_iterator_base<int, false> const&, std::__detail::_Node_iterator_base<int, false> const&) (53,378,495x)
+  667,815,000 ( 5.39%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::operator[](unsigned long) (44,521,000x)
+  434,017,255 ( 3.50%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::operator*() const (8,857,495x)
+  292,297,335 ( 2.36%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::operator++() (8,857,495x)
+  238,159,025 ( 1.92%)                          for (int j : simulation_grid.blocks[neighbor_block_id]) {
+  575,737,175 ( 4.65%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::begin() (8,857,495x)
+  469,447,235 ( 3.79%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::end() (8,857,495x)
+  144,992,523 ( 1.17%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::operator!=(std::__detail::_Node_iterator_base<int, false> const&, std::__detail::_Node_iterator_base<int, false> const&) (11,153,271x)
+  132,862,425 ( 1.07%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::operator[](unsigned long) (8,857,495x)
+  112,493,024 ( 0.91%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::operator*() const (2,295,776x)
+   75,760,608 ( 0.61%)  => /usr/include/c++/11/bits/hashtable_policy.h:std::__detail::_Node_iterator<int, true, false>::operator++() (2,295,776x)
+    7,887,328 ( 0.06%)                              if (i==j) continue;
+   28,507,072 ( 0.23%)                              apply_force(parts[i], parts[j]);
+   45,225,998 ( 0.37%)  => serial.cpp:apply_force(particle_t&, particle_t&) (1,295,776x)
+            .                                       }
+            .                                   }
+            .                               }
+            .                           }
+            .                       }
+            .                   }
+            .           
+            .               // Move Particles
+    4,005,000 ( 0.03%)      for (int i = 0; i < num_parts; ++i) {
+            .                   // move particle
+   13,000,000 ( 0.10%)          move(parts[i], size);
+   65,020,316 ( 0.53%)  => serial.cpp:move(particle_t&, double) (1,000,000x)
+   22,000,000 ( 0.18%)          parts[i].ax = parts[i].ay = 0; 
+            .               }
+        6,000 ( 0.00%)      simulation_grid.update_blocks(parts, num_parts);
+  149,424,249 ( 1.21%)  => /home/mashalimay/HPPC/hw2/hw2/common.h:grid::update_blocks(particle_t*, int) (1,000x)
+        7,021 ( 0.00%)  }
+          178 ( 0.00%)  => serial.cpp:__static_initialization_and_destruction_0(int, int) (1x)
+
+--------------------------------------------------------------------------------
+-- Auto-annotated source: common.h
+--------------------------------------------------------------------------------
+Ir                  
+
+-- line 24 ----------------------------------------
+         .               double vx;    // Velocity X
+         .               double vy;    // Velocity Y
+         .               double ax;    // Acceleration X
+         .               double ay;    // Acceleration Y
+         .               int block_id; // block the particle belongs to
+         .           } particle_t;
+         .           
+         .           
+        22 ( 0.00%)  struct grid {
+        67 ( 0.00%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::vector() (1x)
+         .               // grid is an abstract representation of 2D xy space divided into square blocks
+         .           
+         .               // a grid is a `vector` of hashmaps, each representing a "block", which contains the indices of particles
+         .               std::vector<std::unordered_set<int>> blocks;
+         .           
+         .               int blocks_per_row; // Number of blocks along one dimension
+         .               double block_size;  // length of the block's side
+         .           
+         .               // Calculate which cell a particle belongs to based on its position
+ 6,006,000 ( 0.05%)      int get_block_index(double x, double y) const {
+         .                   // eg: block_size = 4, 3 blocks per row => xy grid from 0 to 11 is divided into 3x3 squares of size 4
+         .                     // in memory: [0,1,2] 1st row [3,4,5] 2nd row [6,7,8] 3rd row
+         .                     // xy coordinate: p = (11,5)
+         .           
+         .                   // column of the block = length in horizontal direction (x) / block_size
+         .                     // eg: 5 / 4 = 1 => block is located in the second column in the 3x3 grid of blocks
+ 6,006,000 ( 0.05%)          int j = int(x / block_size);
+         .                   
+         .                   // row index of the block = length in vertical direction (y) / block_size
+         .                     // eg: 11 / 4 = 2 => block is located in the uppmost row in the 3x3 grid of blocks
+ 6,006,000 ( 0.05%)          int i = int(y / block_size);
+         .           
+         .                   // return the index of the block in the grid converting (i,j) to row-major order
+         .                    // eg: 2 * 3 = 6 (walks to the 3rd row) + 1 (walks to the 2nd column in the 3rd row) = 7 
+ 6,006,000 ( 0.05%)          return i * blocks_per_row + j;
+ 2,002,000 ( 0.02%)      }
+         .           
+    10,000 ( 0.00%)      void update_blocks(particle_t* parts, int num_parts) {
+         .                   // Assign particles to respective blocks based on `x` and `y` coordinates
+ 6,005,000 ( 0.05%)          for (int i = 0; i < num_parts; ++i) {
+26,000,000 ( 0.21%)              int block_id = get_block_index(parts[i].x, parts[i].y);
+26,000,000 ( 0.21%)  => common.h:grid::get_block_index(double, double) const (1,000,000x)
+         .           
+12,000,000 ( 0.10%)              if (parts[i].block_id != block_id) {
+         .                           // remove particle from old block
+   906,220 ( 0.01%)                  blocks[parts[i].block_id].erase(i);
+34,142,988 ( 0.28%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::erase(int const&) (45,311x)
+   679,665 ( 0.01%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::operator[](unsigned long) (45,311x)
+         .                           
+         .                           // add particle to new block and update particle's block_id
+   498,421 ( 0.00%)                  blocks[block_id].insert(i);
+41,997,869 ( 0.34%)  => /usr/include/c++/11/bits/unordered_set.h:std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >::insert(int const&) (45,311x)
+   679,665 ( 0.01%)  => /usr/include/c++/11/bits/stl_vector.h:std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > >::operator[](unsigned long) (45,311x)
+   498,421 ( 0.00%)                  parts[i].block_id = block_id;
+         .                           // reset particle's acceleration
+         .                       }       
+         .                   }
+     6,000 ( 0.00%)      }
+         .           };
+         .           
+         .           //============================================================================
+         .           // thread-safe data structures
+         .           //============================================================================
+         .           
+         .           // Thread-safe block structure
+         .           struct block_thread_safe {    
+-- line 83 ----------------------------------------
+
+--------------------------------------------------------------------------------
+Ir                      
+--------------------------------------------------------------------------------
+12,352,416,594 (99.75%)  events annotated
+

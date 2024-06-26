@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH -J hw2-serial
+#SBATCH -t 00:30:00
+#SBATCH -o ./slurm_outs/slurm_%j.out
+
+# Define a grid of n values for which the application will be run
+n_values=(10000 20000 40000 80000 160000 320000)
+bs=6
+
+# filename
+filename="serial.csv"
+
+rm -f $filename
+echo "n, bs, time, c" >> $filename
+
+# Loop through the n values and run the application with each
+for n in "${n_values[@]}"
+do
+    # Run the application with the current n value and capture its output
+    output=$(./build/serial -n $n -s 1 -bs $bs)
+    #  output=$(srun -n 1 ./build/serial -n $n -s 1 -bs $bs) # run on slurm
+
+    # Parse the simulation time from the output
+    sim_time=$(echo $output | awk -F' = ' '{print $2}' | awk '{print $1}')     
+    # Annotate the s value, n value and simulation time on the same line
+    echo "$n, $bs, $sim_time, 1" >> $filename
+done
+

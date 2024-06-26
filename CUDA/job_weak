@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -c 64
+#SBATCH -J hw2-weak
+#SBATCH -t 00:30:00
+#SBATCH -o ./slurm_outs/slurm_%j.out
+
+# define the base problem size for 1 core
+base_n=10000
+cores=(1 2 4 8 16 32 64)
+bs=6
+
+# file to write to
+filename="weak.csv"
+rm -f filename
+echo "n, bs, time, c" >> $filename
+
+# openMP settings
+export OMP_PLACES=cores
+
+for c in "${cores[@]}"
+do
+    n=$((base_n * c))
+    export OMP_NUM_THREADS=$c
+
+    # if c is 1, then run the serial version
+    if [ $c -eq 1 ]
+    then
+        output=$(./build/serial -n $n -s 1 -bs $bs)
+        # output=$(srun -n 1 ./build/serial -n $n -s 1 -bs $bs)
+    else
+        output=$(./build/openmp -n $n -s 1 -bs $bs)
+        # output=$(srun -n 1 ./build/openmp -n $n -s 1 -bs $bs)
+    fi
+    sim_time=$(echo $output | awk -F' = ' '{print $2}' | awk '{print $1}')
+    echo "$n, $bs, $sim_time, $c" >> $filename
+done

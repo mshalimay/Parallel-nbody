@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH -J hw5-gpu    
+#SBATCH -N 1                          
+#SBATCH --ntasks-per-node=1                                 
+#SBATCH -t 00:15:00                  
+#SBATCH --gres=gpu:V100:1          
+#SBATCH --mem-per-gpu=12G          
+
+# Define a grid of n values for which the application will be run
+n_values=(100000 200000 400000 800000 1600000 3200000)
+
+# filename
+filename="gpu.csv"
+
+rm -f $filename
+echo "n, time" >> $filename
+
+# Loop over each n value
+for n in "${n_values[@]}"
+do
+    # Run the application with the current n value
+    # output=$(srun -n 1 ./build/openmp -n $n -s 1 -bs $bs) # to run on slurm
+    output=$(./build/gpu -n $n -s 1) 
+    
+    # Extract the simulation time from the output
+    sim_time=$(echo $output | awk -F' = ' '{print $2}' | awk '{print $1}')     
+    # Annotate the s value, n value and simulation time on the same line
+    echo "$n, $sim_time" >> $filename
+done

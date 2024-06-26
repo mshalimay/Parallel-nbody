@@ -1,0 +1,4 @@
+/home/mashalimay/HPPC/hw2/hw2/build/CMakeFiles/serial.dir
+/home/mashalimay/HPPC/hw2/hw2/build/CMakeFiles/openmp.dir
+/home/mashalimay/HPPC/hw2/hw2/build/CMakeFiles/edit_cache.dir
+/home/mashalimay/HPPC/hw2/hw2/build/CMakeFiles/rebuild_cache.dir

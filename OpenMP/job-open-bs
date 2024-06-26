@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -c 64
+#SBATCH -J hw2-openmp-bs
+#SBATCH -t 00:30:00
+#SBATCH -o ./slurm_outs/slurm_%j.out
+#SBATCH --exclusive
+
+# Define the range of n values
+n_values=(1000 10000 20000 80000 160000 320000)
+s_values=(1 2 4 5 6 7 8 9 10 20)
+c=64
+
+# Set OpenMP environment variables
+export OMP_NUM_THREADS=$c       # Set the number of threads to 32
+export OMP_PLACES=cores         # Bind threads to cores for potentially better performance
+
+# filename
+filename="bssweep-parallel.csv"
+rm -f $filename
+echo "n, bs, time, c" >> $filename
+
+# Loop over each n value
+for n in "${n_values[@]}"
+do
+    for s in "${s_values[@]}"
+    do
+        # Run the application with the current n value and capture its output
+        output=$(./build/openmp -n $n -s 1 -bs $s)
+        # output=$(srun -n 1 ./build/openmp -n $n -s 1 -bs $s) # to run on slurm
+        
+        # Parse the simulation time from the output
+        sim_time=$(echo $output | awk -F' = ' '{print $2}' | awk '{print $1}')
+        
+        # Annotate the s value, n value and simulation time on the same line
+        echo "$n, $s, $sim_time, $c" >> $filename
+    done
+done

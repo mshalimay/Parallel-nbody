@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH -N 1
+#SBATCH -n 64
+#SBATCH -J hw2-strong
+#SBATCH -t 00:30:00
+#SBATCH --exclusive
+
+# define n size
+n=500000
+cores=(1 2 4 8 16 32)
+bs=6
+
+# file to write to
+filename="strong.csv"
+rm -f $filename
+echo "n, bs, time, c" >> $filename
+
+# Set OpenMP environment variables
+export OMP_PLACES=cores         
+
+# define the range of cores
+for c in "${cores[@]}"
+do
+    #OpenMP settings:
+    export OMP_NUM_THREADS=$c
+    # if c is 1, then run the serial version
+    if [ $c -eq 1 ]
+    then
+        # output=$(./build/serial -n $n -s 1 -bs $bs)
+        output=$(srun -n 1 ./build/serial -n $n -s 1 -bs $bs) # to run on slurm
+    else
+        # output=$(./build/openmp -n $n -s 1 -bs $bs)
+        output=$(srun -n 1 ./build/openmp -n $n -s 1 -bs $bs) # to run on slurm
+    fi
+    sim_time=$(echo $output | awk -F' = ' '{print $2}' | awk '{print $1}')     
+    # Annotate the s value, n value and simulation time on the same line
+    echo "$n, $bs, $sim_time, $c" >> $filename
+done
